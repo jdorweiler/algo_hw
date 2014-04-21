@@ -36,14 +36,17 @@ def main():
 	makePlot(rt1, rt2, rt3)
 
 def algo1(array):
-	maxSum = 0
-	for e in range(len(array)):
-		for j in range(e,len(array)):
-			maxSum = np.maximum(maxSum, sum(array[e:j]))
+	maxSum = -99999
+	if len(array) == 1:
+		maxSum = array[0]
+	else:
+		for e in range(len(array)):
+			for j in range(e,len(array)):
+				maxSum = np.maximum(maxSum, sum(array[e:j]))
 	print "Algo1: ",maxSum
 
 def algo2(array):
-	maxSum = 0
+	maxSum = -99999
 	for e in range(len(array)):
 		testSum = 0
 		for j in range(e,len(array)):
@@ -53,8 +56,6 @@ def algo2(array):
 
 #this still needs work
 def algo3(array):
-	maxLeft = 0
-	maxRight = 0
 	if(len(array) == 0):
 		return 0
 	if(len(array) == 1):
@@ -62,18 +63,22 @@ def algo3(array):
 
 	mid = len(array)/2
 	tempL = tempR = 0
-	#left side
-	for i in range(0,mid):
+	maxLeft = maxRight = -99999
+
+	#left side crossing -- mid backwards
+	for i in range(mid,0,-1):
 		tempL = tempL + array[i]
 		maxLeft = np.maximum(maxLeft, tempL)
 
-	#right side
-	for j in range(mid,len(array)):
+	#right side crossing -- mid forwards
+	for j in range(mid+1, len(array)):
 		tempR = tempR + array[j]
 		maxRight = np.maximum(maxRight, tempR)
 	maxCrossing = maxLeft + maxRight
+
 	MaxA = algo3(array[:mid])
-	MaxB = algo3(array[mid:])
+	MaxB = algo3(array[mid+1:])
+
 	return np.maximum(np.maximum(MaxA, MaxB),maxCrossing)
 
 
