@@ -12,36 +12,34 @@ def main():
 	rt3 = []
 
 	# test each algo 2 times to average results
-	for i in range(3):
+	for i in range(2):
 		
-		for n in range(0,10000,1000):
+		for n in range(1,1000,100):
 			#generte a random array
 			testArr = np.random.random_integers(100, size=(n,))-50
 
+			# test algo1
 			#algo1 takes a stupid amount of time to run so limit to 900
 			if(n < 901):
 				start = time.time()
 				algo1(testArr)
 				stop = time.time()
 				addToList(rt1, (stop-start), n, i, 100)
-				print rt1[n/1000]
 
 			#test algo2
 			start = time.time()
 			algo2(testArr)
 			stop = time.time()
-			addToList(rt2, (stop-start), n, i, 1000)
-			print rt2[n/1000]
+			addToList(rt2, (stop-start), n, i, 100)
 
 			#test algo3		
 			start = time.time()
 			print "Algo3: ", algo3(testArr)
 			stop = time.time()
-			addToList(rt3, (stop-start), n, i, 1000)
-			print rt3[n/1000]
+			addToList(rt3, (stop-start), n, i, 100)
 
-#	makePlot(rt1, rt2, rt3, 900)
-	makePlot(rt1, rt2, rt3, 9000)
+	makePlot(rt1, rt2, rt3, 900)
+#	makePlot(rt1, rt2, rt3, 9000)
 
 def addToList(array, value, n, i,stepSize):
 	index = n/stepSize
@@ -54,50 +52,53 @@ def addToList(array, value, n, i,stepSize):
 		array.append( [n, value] )
 
 def algo1(array):
-	maxSum = -99999
+	maxSum = -99999	    # constant, O(1)
 	if len(array) == 1:
-		maxSum = array[0]
+		maxSum = array[0] #constant, O(1)
 	else:
-		for e in range(len(array)):
-			for j in range(e,len(array)):
-				maxSum = np.maximum(maxSum, sum(array[e:j]))
+		for e in range(len(array)): #O(n)
+			for j in range(e,len(array)): #O(n)
+				maxSum = np.maximum(maxSum, sum(array[e:j+1])) #O(n)
 	print "Algo1: ",maxSum
+	### Total running is O(n^3), or theta n^3 since it goes through all elements
 
 def algo2(array):
-	maxSum = -99999
-	for e in range(len(array)):
-		testSum = 0
-		for j in range(e,len(array)):
-			testSum += array[j]
-			maxSum = np.maximum(maxSum, testSum)
+	maxSum = -99999 #O(1)
+	for e in range(len(array)): # O(n)
+		testSum = 0	    # O(1)
+		for j in range(e,len(array)):   # O(n)
+			testSum += array[j]     # O(1)
+			maxSum = np.maximum(maxSum, testSum)    # O(1)
 	print "Algo2: ",maxSum
+        ### Total asymptotic running time is O(n^2)
 
 #this still needs work
 def algo3(array):
-	if(len(array) == 0):
+	if(len(array) == 0):        #O(1) for whole block
 		return 0
 	if(len(array) == 1):
 		return array[0]
 
-	mid = len(array)/2
+	mid = len(array)/2          # O(1) for whole block
 	tempL = tempR = 0
 	maxLeft = maxRight = -99999
 
 	#left side crossing -- mid backwards
-	for i in range(mid,0,-1):
-		tempL = tempL + array[i]
-		maxLeft = np.maximum(maxLeft, tempL)
+	for i in range(mid,-1,-1):  # O(n)
+		tempL = tempL + array[i]    # O(1)
+		maxLeft = np.maximum(maxLeft, tempL)    # O(1)
 
 	#right side crossing -- mid forwards
-	for j in range(mid+1, len(array)):
-		tempR = tempR + array[j]
-		maxRight = np.maximum(maxRight, tempR)
-	maxCrossing = maxLeft + maxRight
+	for j in range(mid+1, len(array)):  # O(n)
+		tempR = tempR + array[j]    # O(1)
+		maxRight = np.maximum(maxRight, tempR)  # O(1)
+	maxCrossing = max(maxLeft + maxRight,maxLeft)   # O(1)
 
-	MaxA = algo3(array[:mid])
-	MaxB = algo3(array[mid+1:])
+	MaxA = algo3(array[:mid])   # O(n/2)
+	MaxB = algo3(array[mid:])   # O(n/2)
 
-	return np.maximum(np.maximum(MaxA, MaxB),maxCrossing)
+	return max(MaxA, MaxB, maxCrossing)
+        ### Total asymptotic running time: O(n log n)
 
 
 def makePlot(data1, data2, data3, limit):
@@ -111,7 +112,7 @@ def makePlot(data1, data2, data3, limit):
 
 	x = data1[:,0]
 	y = data1[:,1]
-	#plt.plot(x[1:limit],y[1:limit], label="n^3 Algorithm")
+	plt.plot(x[1:limit],y[1:limit], label="n^3 Algorithm")
 
 
 	x2 = data2[:,0]
