@@ -12,31 +12,33 @@ def main():
 	rt3 = []
 
 	# test each algo 2 times to average results
-	for i in range(2):
+	for i in range(4):
 		
 		for n in range(0,1000,100):
 			#generte a random array
 			testArr = np.random.random_integers(100, size=(n,))-50
 
-			# test algo1
 			#algo1 takes a stupid amount of time to run so limit to 900
 			if(n < 901):
 				start = time.time()
 				algo1(testArr)
 				stop = time.time()
 				addToList(rt1, (stop-start), n, i, 100)
+				print rt1[n/100]
 
 			#test algo2
 			start = time.time()
 			algo2(testArr)
 			stop = time.time()
 			addToList(rt2, (stop-start), n, i, 100)
+			print rt2[n/100]
 
 			#test algo3		
 			start = time.time()
 			print "Algo3: ", algo3(testArr)
 			stop = time.time()
 			addToList(rt3, (stop-start), n, i, 100)
+			print rt3[n/100]
 
 	makePlot(rt1, rt2, rt3, 900)
 #	makePlot(rt1, rt2, rt3, 9000)

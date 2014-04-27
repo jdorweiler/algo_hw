@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
+\usepackage{float}
 \usepackage[margin=1in]{geometry}
 \setlength\parindent{0pt}
 \usepackage{xcolor}
@@ -46,10 +47,7 @@
 
 \maketitle
 
-\section{Section 1}
-
-
-
+\section*{Mathematical Analysis}
   \begin{lstlisting}[language=python,caption={pseudo code for $n^3$ algorithm}]
 if len(array) == 1:
 	maxSum = array[0]
@@ -93,8 +91,11 @@ MaxA = algo3(array[:mid])
 MaxB = algo3(array[mid+1:])
 
 return np.maximum(np.maximum(MaxA, MaxB),maxCrossing))
-  \end{lstlisting}  
+  \end{lstlisting} 
 
+\section*{Theoretical Correctness}
+
+\section*{Experimental Analysis}
 
 \begin{figure}[h!]
 \centering
@@ -102,11 +103,38 @@ return np.maximum(np.maximum(MaxA, MaxB),maxCrossing))
 \caption{Plot of the three algorithms up to array size of 900, top: log/log, bottom: normal axis}
 \end{figure} 
 
+A plot of the run times for the three algorithms are shown in figure 1.  The results of the slope calculation for each algorithm are shown in the table below.  The slope calculation fits with what we would expect.  The $n^3$ algorithm has a slope ~3, the $n^2$ algorithem has a slope ~2, and the $n\log(n)$ algorithm has a slope a bit higher than 1. \\
+
+\begin{tabular}{|c|c|}
+\hline 
+Algorithm & Slope of log-log plot \\ 
+\hline 
+$n^3$ & 2.89 \\ 
+\hline 
+$n^2$ & 1.99 \\ 
+\hline 
+$n\log(n)$ & 1.16 \\ 
+\hline 
+\end{tabular}\\
+
+In the lower plot on figure 1 we have also plotted the three algorithms with a normal axis.  This shows the $n^3$ run time of the first algorithm.  The third algorithm runs so quickly that it doesn't even show up at this scale. 
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{plotTo9000}
 \caption{Plot of the three algorithms up to array size of 9000, top: log/log, bottom: normal axis}
 \end{figure} 
 
+
+
+\pagebreak
+ 
+
+\section*{Extrapolation and Interpretation}
+
+\textbf{What is the biggest instance that you could solve with your algorithm in one hour}\\
+
+
+\textbf{Determine the slope of the line in your log-log plot and from these slopes infer the experimental running time for each algorithm. Discuss any discrepancies between the experimental and theoretical running times}\\
 
 \end{document}
