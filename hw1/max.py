@@ -12,9 +12,9 @@ def main():
 	rt3 = []
 
 	# test each algo 2 times to average results
-	for i in range(4):
+	for i in range(3):
 		
-		for n in range(0,1000,100):
+		for n in range(0,10000,1000):
 			#generte a random array
 			testArr = np.random.random_integers(100, size=(n,))-50
 
@@ -24,24 +24,24 @@ def main():
 				algo1(testArr)
 				stop = time.time()
 				addToList(rt1, (stop-start), n, i, 100)
-				print rt1[n/100]
+				print rt1[n/1000]
 
 			#test algo2
 			start = time.time()
 			algo2(testArr)
 			stop = time.time()
-			addToList(rt2, (stop-start), n, i, 100)
-			print rt2[n/100]
+			addToList(rt2, (stop-start), n, i, 1000)
+			print rt2[n/1000]
 
 			#test algo3		
 			start = time.time()
 			print "Algo3: ", algo3(testArr)
 			stop = time.time()
-			addToList(rt3, (stop-start), n, i, 100)
-			print rt3[n/100]
+			addToList(rt3, (stop-start), n, i, 1000)
+			print rt3[n/1000]
 
-	makePlot(rt1, rt2, rt3, 900)
-#	makePlot(rt1, rt2, rt3, 9000)
+#	makePlot(rt1, rt2, rt3, 900)
+	makePlot(rt1, rt2, rt3, 9000)
 
 def addToList(array, value, n, i,stepSize):
 	index = n/stepSize
@@ -111,7 +111,7 @@ def makePlot(data1, data2, data3, limit):
 
 	x = data1[:,0]
 	y = data1[:,1]
-	plt.plot(x[1:limit],y[1:limit], label="n^3 Algorithm")
+	#plt.plot(x[1:limit],y[1:limit], label="n^3 Algorithm")
 
 
 	x2 = data2[:,0]

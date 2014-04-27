@@ -48,6 +48,8 @@
 \maketitle
 
 \section*{Mathematical Analysis}
+
+
   \begin{lstlisting}[language=python,caption={pseudo code for $n^3$ algorithm}]
 if len(array) == 1:
 	maxSum = array[0]
@@ -133,6 +135,11 @@ In the lower plot on figure 1 we have also plotted the three algorithms with a n
 \section*{Extrapolation and Interpretation}
 
 \textbf{What is the biggest instance that you could solve with your algorithm in one hour}\\
+
+From our experimental data and using the slope of our log-log plot we determined that the relationship between run time and array size for the $n\log(n)$ algorithm is approximately: 
+$$\log(time) = 1.16\log(elements)- 11.15$$
+
+Using this equation and a run time of 1 hr (3600s) we get an approximate array size of 17.4 million elements \\
 
 
 \textbf{Determine the slope of the line in your log-log plot and from these slopes infer the experimental running time for each algorithm. Discuss any discrepancies between the experimental and theoretical running times}\\
