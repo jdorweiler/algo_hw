@@ -14,7 +14,7 @@ def main():
 	# test each algo 2 times to average results
 	for i in range(2):
 		
-		for n in range(0,1000,100):
+		for n in range(1,1000,100):
 			#generte a random array
 			testArr = np.random.random_integers(100, size=(n,))-50
 
@@ -58,7 +58,7 @@ def algo1(array):
 	else:
 		for e in range(len(array)):
 			for j in range(e,len(array)):
-				maxSum = np.maximum(maxSum, sum(array[e:j]))
+				maxSum = np.maximum(maxSum, sum(array[e:j+1]))
 	print "Algo1: ",maxSum
 
 def algo2(array):
@@ -82,7 +82,7 @@ def algo3(array):
 	maxLeft = maxRight = -99999
 
 	#left side crossing -- mid backwards
-	for i in range(mid,0,-1):
+	for i in range(mid,-1,-1):
 		tempL = tempL + array[i]
 		maxLeft = np.maximum(maxLeft, tempL)
 
@@ -90,12 +90,12 @@ def algo3(array):
 	for j in range(mid+1, len(array)):
 		tempR = tempR + array[j]
 		maxRight = np.maximum(maxRight, tempR)
-	maxCrossing = maxLeft + maxRight
+	maxCrossing = max(maxLeft + maxRight,maxLeft)
 
 	MaxA = algo3(array[:mid])
-	MaxB = algo3(array[mid+1:])
+	MaxB = algo3(array[mid:])
 
-	return np.maximum(np.maximum(MaxA, MaxB),maxCrossing)
+	return max(MaxA, MaxB, maxCrossing)
 
 
 def makePlot(data1, data2, data3, limit):
