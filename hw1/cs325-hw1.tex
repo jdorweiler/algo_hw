@@ -50,6 +50,7 @@
 \section{Mathematical Analysis}
 
 
+<<<<<<< HEAD
 \paragraph{Running time analysis of algorithm 1.} The overall asymptotic running time of algorithm 1 is $O(n^3)$. The conditionals at the beginning of the function are constant-time operations. After that it enters into three nested loops. The outer-most loop is $\theta(n)$ since it will always run through the entire set. The inner loops are $O(n)$ each since they will shrink and expand as the algorithm iterates through n. The inner-most loop where the sum of the array slice from e to j is calculated will frequently be much smaller than n. Overall this gives an $O(n^3)$ running time.
 
   \begin{lstlisting}[language=python,caption={pseudo code for $n^3$ algorithm},mathescape]
@@ -59,15 +60,34 @@ else:
 for e in range(len(array)): # $\theta $(n)
 for j in range(e,len(array)): # $\theta$ (n) -- always runs through all elements
 maxSum = np.maximum(maxSum, sum(array[e:j])) # O(n) -- shrinks
+=======
+\paragraph{Running time analysis of algorithm 1.}  The overall asymptotic running time of algorithm 1 is $O(n^3)$. The conditionals at the beginning of the function are constant-time operations. After that it enters into three nested loops. The outer-most loop is $\theta(n)$ since it will always run through the entire set. The inner loops are $O(n)$ each since they will shrink and expand as the algorithm iterates through n. The inner-most loop where the sum of the array slice from e to j is calculated will frequently be much smaller than n. Overall this gives an $O(n^3)$ running time. 
+
+  \begin{lstlisting}[language=python,caption={pseudo code for $n^3$ algorithm},mathescape]
+if len(array) == 1:				# O(1) constant operation
+	maxSum = array[0]			# O(1) constant operation
+else:
+	for e in range(len(array)):	# $\theta $(n)
+		for j in range(e,len(array)):	# $\theta$ (n) -- always runs through all elements
+			maxSum = np.maximum(maxSum, sum(array[e:j]))	# O(n) -- shrinks
+>>>>>>> c40e6cfea3ef3748ac01f96500a971681b7b4cc8
   \end{lstlisting}
 
 \paragraph{Running time analysis of algorithm 2.} The overall running time for algorithm 2 is $\theta(n^2)$. This algorithm has two nested loops that iterate over n, with the outermost loop running in $\theta(n)$ and the inner loop running in O(n) time. Overall the inner loop will grow smaller as the outer loop counter gets larger, but the running time will tend to be $\theta(n^2)$.
   \begin{lstlisting}[language=python,caption={pseudo code for $n^2$ algorithm},mathescape]
+<<<<<<< HEAD
 for e in range(len(array)): # $\theta$(n)
 testSum = 0 # O(1) constant
 for j in range(e,len(array)): # O(n)
 testSum += array[j] # O(1) constant
 maxSum = np.maximum(maxSum, testSum) # O(1) constant
+=======
+for e in range(len(array)):				# $\theta$(n)
+	testSum = 0					# O(1) constant
+	for j in range(e,len(array)):			# O(n)
+		testSum += array[j]			# O(1) constant
+		maxSum = np.maximum(maxSum, testSum)	# O(1) constant
+>>>>>>> c40e6cfea3ef3748ac01f96500a971681b7b4cc8
   \end{lstlisting}
 
 \paragraph{Running time analysis of algorithm 3.} The overall running time for algorithm 3 is $\theta(n log n)$. The $\theta(n)$ running time comes from the portion where it calculates the crossing sum, which involves two $\theta(n)$ operations over the lower and upper halves of n, giving $ \frac{1}{2} \theta(n) + \frac{1}{2} \theta(n)$. The logarithmic portion comes from the recursive calls to calculate the left- and right-sums. These calls divide n in half each time, resulting in $\theta(log n)$ running time. Since the whole function is called recursively, this gives $ \theta(n) * 2 \cdot \theta(log n) = \theta(n log n)$.
@@ -75,11 +95,17 @@ maxSum = np.maximum(maxSum, testSum) # O(1) constant
 
   \begin{lstlisting}[language=python,caption={pseudo code for $n\log(n)$ algorithm},mathescape]
 def algo3(array):
+<<<<<<< HEAD
 if(len(array) == 0): # whole block is O(1) operations
 return 0
+=======
+if(len(array) == 0):			# whole block is O(1) operations
+	return 0
+>>>>>>> c40e6cfea3ef3748ac01f96500a971681b7b4cc8
 if(len(array) == 1):
 return array[0]
 
+<<<<<<< HEAD
 mid = len(array)/2 # whole block is O(1) operations
 tempL = tempR = 0
 maxLeft = maxRight = -infinity
@@ -97,6 +123,25 @@ maxCrossing = maxLeft + maxRight # constant O(1)
 
 MaxA = algo3(array[:mid]) # $\theta$(n/2) -- halves each time
 MaxB = algo3(array[mid+1:]) # $\theta$(n/2) -- halves each time
+=======
+mid = len(array)/2				# whole block is O(1) operations
+tempL = tempR = 0
+maxLeft = maxRight = -infinity
+
+#left side crossing -- mid backwards	
+for i in range(mid,0,-1):					# $\theta(n) / 2$ 
+	tempL = tempL + array[i]				# constant O(1)
+	maxLeft = np.maximum(maxLeft, tempL)	# constant O(1)
+
+#right side crossing -- mid forwards
+for j in range(mid+1, len(array)):	# $\theta(n) \div 2 $
+	tempR = tempR + array[j]	# constant O(1)
+	maxRight = np.maximum(maxRight, tempR)	# constant O(1)
+maxCrossing = maxLeft + maxRight	# constant O(1)
+
+MaxA = algo3(array[:mid])		# $\theta$(n/2) -- halves each time
+MaxB = algo3(array[mid+1:])		# $\theta$(n/2) -- halves each time
+>>>>>>> c40e6cfea3ef3748ac01f96500a971681b7b4cc8
 
 return np.maximum(np.maximum(MaxA, MaxB),maxCrossing))
   \end{lstlisting}
