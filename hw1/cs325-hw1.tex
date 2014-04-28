@@ -90,7 +90,7 @@ tempL = tempL + array[i] # constant O(1)
 maxLeft = np.maximum(maxLeft, tempL) # constant O(1)
 
 #right side crossing -- mid forwards
-for j in range(mid+1, len(array)): # $\theta(n) \div 2 $
+for j in range(mid+1, len(array)): # $\theta(n) / 2 $
 tempR = tempR + array[j] # constant O(1)
 maxRight = np.maximum(maxRight, tempR) # constant O(1)
 maxCrossing = maxLeft + maxRight # constant O(1)
