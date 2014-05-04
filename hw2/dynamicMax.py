@@ -1,32 +1,51 @@
+#!/usr/bin/env python2
+
 import numpy as np 
 import time
 from matplotlib import pyplot as plt 
+import sys
 
 def main():
 
 	rt3 = []
 	rt4 = []
+	rt5 = []
 
-	# test each algo 2 times to average results
-	for i in range(1):
-		
-		for n in range(1,500000,100000):
-			#generte a random array
-			testArr = np.random.random_integers(100, size=(n,))-50
+	tst = []
 
-			#test algo3		
-			start = time.time()
-			print "Algo3: ", algo3(testArr)
-			stop = time.time()
-			addToList(rt3, (stop-start), n, i, 100000)
+	if len(sys.argv) > 1:
+	    f = open(sys.argv[1], 'r')
 
-			#test algo4		
-			start = time.time()
-			print "Algo4 ", algo4(testArr)
-			stop = time.time()
-			addToList(rt4, (stop-start), n, i, 100000)
+            for line in f:
+                tst = map(int, line.split())
+                print "trying ", tst
+                print "algo3: ", algo3(tst)
+                print "algo4: ", algo4(tst)
+                
+            sys.exit(1)
+        else:
 
-	makePlot(rt3, rt4, 500000)
+            # test each algo 2 times to average results
+            for i in range(1):
+                    
+                    for n in range(1,1000,10):
+                            #generte a random array
+                            testArr = np.random.random_integers(100, size=(n,))-50
+
+                            #test algo3		
+                            start = time.time()
+                            print "Algo3: ", algo3(testArr)
+                            stop = time.time()
+                            addToList(rt3, (stop-start), n, i, 100000)
+
+                            #test algo4		
+                            start = time.time()
+                            print "Algo4 ", algo4(testArr)
+                            stop = time.time()
+                            addToList(rt4, (stop-start), n, i, 100000)
+
+
+            makePlot(rt3, rt4, 500000)
 
 def addToList(array, value, n, i,stepSize):
 	index = n/stepSize
@@ -47,7 +66,7 @@ def algo4(array):
     	else:
     		tempSum = i
     	maxSum = np.maximum(maxSum, tempSum)
-    return maxSum	
+    return maxSum
 
 #this still needs work
 def algo3(array):
@@ -76,6 +95,7 @@ def algo3(array):
 
 	return max(MaxA, MaxB, maxCrossing)
         ### Total asymptotic running time: O(n log n)
+
 
 
 def makePlot(data1, data2, limit):
