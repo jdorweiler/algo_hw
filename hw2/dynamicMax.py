@@ -26,9 +26,9 @@ def main():
         else:
 
             # test each algo 2 times to average results
-            for i in range(2):
+            for i in range(1):
                     
-                    for n in range(1,100000,5000):
+                    for n in range(1,20000,1000):
                             #generte a random array
                             testArr = np.random.random_integers(100, size=(n,))-50
 
@@ -36,16 +36,16 @@ def main():
                             start = time.time()
                             print "Algo3: ", algo3(testArr)
                             stop = time.time()
-                            addToList(rt3, (stop-start), n, i, 5000)
+                            addToList(rt3, (stop-start), n, i, 1000)
 
                             #test algo4		
                             start = time.time()
                             print "Algo4 ", algo4(testArr)
                             stop = time.time()
-                            addToList(rt4, (stop-start), n, i, 5000)
+                            addToList(rt4, (stop-start), n, i, 1000)
 
 
-            makePlot(rt3, rt4, 100000)
+            makePlot(rt3, rt4, 20000)
 
 def addToList(array, value, n, i,stepSize):
 	index = n/stepSize
@@ -99,6 +99,8 @@ def algo3(array):
 
 
 def makePlot(data1, data2, limit):
+
+	print "Slope for algo3: ", (np.log(data1[10:0])-np.log(data1[2:0]))/(np.log(data1[10:1])-np.log(data1[2:1]))
 	data1 = np.array(data1)
 	data2 = np.array(data2)
 

@@ -73,7 +73,7 @@ MaxSubArray(array):
 
 \section*{Running Time}
 
-The running time for this algorithm is $\theta(n)$. The algorithm only loops from 0 to n once, performing a number of constant-time operations per iteration. It will always run from 0 to n, thus giving a $\theta(n)$ running time.
+The running time for this algorithm is $\theta(n)$. The algorithm only loops from 0 to n once, performing a number of constant-time operations per iteration. It will always run from 0 to n, thus giving a $\theta(n)$ running time.  The calculated running time for the dynamic algorithm based on the slope of our log-log plot is 0.98 which shows our assumptions are correct.  The run time for the $n\log(n)$ algorithm came out out to 1.10 which we know from the previous assignment is correct. 
 
 \section*{Theoretical Correctness}
 
@@ -81,7 +81,7 @@ MaxSubArray will return the maximum value contiguous subarray for some array $A$
 
 \textbf{Base case}: The base case is when $n=1$. Then the value of the maximum subarray is $A[n]$.
 
-\textbf{Proof}: Now consider adding another element to the array. There are two cases:
+\textbf{Proof}: Assume that the algorithm is correct for $1\leq n \leq k$. Now consider adding another element to the array. There are two cases:
 
 \begin{itemize}
 
@@ -92,7 +92,7 @@ MaxSubArray will return the maximum value contiguous subarray for some array $A$
 
 \end{itemize}
 
-The maximum value is then set to the maximum of either the previous maximum or the running sum. By the inductive hypothesis, we know that the previous maximum sum was the maximum value for the subarray up to $n$. Therefore the algorithm correctly returns the maximum subarray.
+The maximum value is then set to the maximum of either the previous maximum or the running sum. By the inductive hypothesis, we know that the previous maximum sum was the maximum value for the subarray up to $k$. Therefore the algorithm correctly returns the maximum subarray.
 
 
 \pagebreak
