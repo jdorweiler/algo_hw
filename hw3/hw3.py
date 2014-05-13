@@ -2,16 +2,16 @@ from pulp import *
 
 #set up variables, minimum of 0 for each
 HAM_FRESH = LpVariable("ham fresh", 0)
-HAM_SRT = LpVariable("Ham Smoked RT", 0)
+HAM_SRT = LpVariable("Ham Smoked RT", )
 HAM_SOT = LpVariable("Ham Smoked OT", 0)
 
 PORK_FRESH = LpVariable("PORK fresh", 0)
 PORK_SRT = LpVariable("PORK Smoked RT", 0)
 PORK_SOT = LpVariable("PORK Smoked OT", 0)
 
-P_HAM_FRESH = LpVariable("Pham fresh", 0)
-P_HAM_SRT = LpVariable("PHam Smoked RT", 0)
-P_HAM_SOT = LpVariable("PHam Smoked OT", 0)
+P_HAM_FRESH = LpVariable("P-ham fresh", 0)
+P_HAM_SRT = LpVariable("P-Ham Smoked RT", 0)
+P_HAM_SOT = LpVariable("P-Ham Smoked OT", 0)
 
 
 # Create the 'prob' variable to contain the problem data
