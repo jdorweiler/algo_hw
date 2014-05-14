@@ -2,7 +2,7 @@ from pulp import *
 
 #set up variables, minimum of 0 for each
 HAM_FRESH = LpVariable("ham fresh", 0)
-HAM_SRT = LpVariable("Ham Smoked RT", )
+HAM_SRT = LpVariable("Ham Smoked RT", 0)
 HAM_SOT = LpVariable("Ham Smoked OT", 0)
 
 PORK_FRESH = LpVariable("PORK fresh", 0)

@@ -10,5 +10,5 @@ _C3: P_Ham_Smoked_OT + P_Ham_Smoked_RT + P_ham_fresh <= 230
 _C4: Ham_Smoked_RT + PORK_Smoked_RT + P_Ham_Smoked_RT <= 420
 _C5: Ham_Smoked_OT + PORK_Smoked_OT + P_Ham_Smoked_OT <= 250
 Bounds
-5 <= Ham_Smoked_RT
+Ham_Smoked_RT free
 End
