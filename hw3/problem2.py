@@ -19,12 +19,16 @@ def main():
 	prob = LpProblem("min max line", LpMinimize)
 
 	#objective to minimize
-	# minimize the sum of all the distances from a line to each point
-	for i in range(len(points)):
-		prob += lpSum(points[i][0]*x+points[i][1]*y-c)
+	prob += x+y-c
 
-	prob += x >= 0.001
-	prob += y >= 0.001
+	# this is wrong and needs work
+	# just messing around and trying to figure it out. 
+	for i in range(len(points)):
+		prob += (points[i][0]*x+points[i][1]*y - c) <= -10
+
+	prob += x >= 1
+	prob += y >= 1
+
 	# The problem data is written to an .lp file
 	prob.writeLP("minmaxline.lp")
 
