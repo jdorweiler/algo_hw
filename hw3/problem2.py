@@ -7,6 +7,8 @@ import pylab
 x = LpVariable("X_i")
 y = LpVariable("Y_i")
 c = LpVariable("C")
+error = LpVariable("Error")
+W = LpVariable("W")
 
 
 def main():
@@ -19,16 +21,15 @@ def main():
 	prob = LpProblem("min max line", LpMinimize)
 
 	#objective to minimize
-	prob += x+y-c
-
+	prob += W
 	# this is wrong and needs work
 	# just messing around and trying to figure it out. 
 	for i in range(len(points)):
-		prob += (points[i][0]*x+points[i][1]*y - c) <= -10
-
-	prob += x >= 1
-	prob += y >= 1
-
+		prob += error == lpSum(points[i][1] - points[i][0] * x +c)
+		prob += error >= points[i][0]*x+points[i][1]*y
+		prob += error >= points[i][0]*x-points[i][1]*y
+	
+	prob += W >= error
 	# The problem data is written to an .lp file
 	prob.writeLP("minmaxline.lp")
 
@@ -41,9 +42,6 @@ def main():
 	# Each of the variables is printed with it's resolved optimum value
 	for v in prob.variables():
 	    print v.name, "=", v.varValue
-
-	# The optimised objective function value is printed to the screen    
-	print "Total net profit  = ", value(prob.objective)
 
 	plot(points, prob.variables())
 
