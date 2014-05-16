@@ -21,15 +21,15 @@ def main():
 	prob = LpProblem("min max line", LpMinimize)
 
 	#objective to minimize
-	prob += W
+	prob += error
 	# this is wrong and needs work
 	# just messing around and trying to figure it out. 
 	for i in range(len(points)):
-		prob += error == lpSum(points[i][1] - points[i][0] * x +c)
-		prob += error >= points[i][0]*x+points[i][1]*y
-		prob += error >= points[i][0]*x-points[i][1]*y
+	#	prob += lpSum(points[i][1] - points[i][0] * x +c)
+		prob += error >= points[i][1] - (points[i][0] * x +c)
+		prob += error >= -points[i][1] + (points[i][0] * x +c)
 	
-	prob += W >= error
+	#prob += W >= error
 	# The problem data is written to an .lp file
 	prob.writeLP("minmaxline.lp")
 
@@ -57,10 +57,10 @@ def plot(points, variables):
 		x_points.append(points[i][0])
 		y_points.append(points[i][1])
 
-	t = np.arange(0.0, 2.0, 0.01)
+	t = np.arange(0.0, 15.0, 1)
 
 	line = x.varValue*t+c.varValue
-
+	print line
 	plt.pyplot.scatter(x_points,y_points)
 	plt.pyplot.plot(line, 'r--');
 	plt.pyplot.show()
