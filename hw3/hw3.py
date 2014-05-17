@@ -22,7 +22,7 @@ prob += HAM_FRESH*8+HAM_SRT*14+HAM_SOT*11+PORK_FRESH*4+PORK_SRT*12+PORK_SOT*7+P_
 
 # constraints
 prob += HAM_FRESH+HAM_SRT+HAM_SOT <= 480 # at most 480 ham
-prob += PORK_FRESH+PORK_SRT+PORK_SOT >= 400 # at most 400 pork
+prob += PORK_FRESH+PORK_SRT+PORK_SOT <= 400 # at most 400 pork
 prob += P_HAM_FRESH+P_HAM_SRT+P_HAM_SOT <= 230 # at most 230 picnic ham
 prob += HAM_SRT+PORK_SRT+P_HAM_SRT <= 420 # max 420 smoked on RT
 prob += HAM_SOT+PORK_SOT+P_HAM_SOT <= 250 # max 250 smoked on OT
