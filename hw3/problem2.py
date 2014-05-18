@@ -8,7 +8,6 @@ x = LpVariable("X_i")
 y = LpVariable("Y_i")
 c = LpVariable("C")
 error = LpVariable("Error")
-W = LpVariable("W")
 
 
 def main():
@@ -22,14 +21,12 @@ def main():
 
 	#objective to minimize
 	prob += error
-	# this is wrong and needs work
-	# just messing around and trying to figure it out. 
+
+	# add constraints
 	for i in range(len(points)):
-	#	prob += lpSum(points[i][1] - points[i][0] * x +c)
 		prob += error >= points[i][1] - (points[i][0] * x +c)
 		prob += error >= -points[i][1] + (points[i][0] * x +c)
 	
-	#prob += W >= error
 	# The problem data is written to an .lp file
 	prob.writeLP("minmaxline.lp")
 
@@ -60,7 +57,7 @@ def plot(points, variables):
 	t = np.arange(0.0, 15.0, 1)
 
 	line = x.varValue*t+c.varValue
-	print line
+
 	plt.pyplot.scatter(x_points,y_points)
 	plt.pyplot.plot(line, 'r--');
 	plt.pyplot.show()
