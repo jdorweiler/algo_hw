@@ -141,6 +141,33 @@ prob.solve()
 
 \end{lstlisting}
 
+
+\section*{Problem 2: }
+
+\paragraph{Objective.} \bigskip The objective here is to minimize the error between each point in the given data set and a regression line. Let E be the error and c be some constant. Then this equation is: 
+
+\begin{align*}
+ min: \bigskip &|ax + by +c| \\
+ Constraints: \bigskip E &>= y - (x_i * x + c) \\
+ E &>= -y_i + (x_i * x + c)
+\end{align*}
+
+
+\paragraph{Best Solution.} \bigskip We found the optimal solution as follows:
+
+\begin{align*}
+ E &= 0.571429 \\
+ x &= 1.71429 \\
+ C &= 1.85714 
+\end{align*}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{figure_1}
+\caption{Plot of the best solution}
+\end{figure} 
+
+
 \begin{lstlisting}[language=python,caption={Code to solve linear program},mathescape]
 
 //set up variables
@@ -175,11 +202,5 @@ def main():
 	
 
 \end{lstlisting}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\textwidth]{figure_1}
-\caption{Plot of the dynamic algorithm (green) and the $n\log(n)$ algorithm from homework1}
-\end{figure} 
 
 \end{document}
