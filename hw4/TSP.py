@@ -59,7 +59,6 @@ def getMST(graph, dist, MST):
 			if(checkEdge(x, MST, dist)):
 				#print "Adding edge: ", dist[x]
 				MST.append(dist[x])
-		print dist[x]
 		
 def checkEdge(x, MST, dist):
 	y_val = 0
@@ -121,6 +120,8 @@ def plot():
 			xy=( x_points[len(x_points)-1], 
 				y_points[len(y_points)-1]) )
 
+		plt.pyplot.scatter( x_points[len(x_points)-1], y_points[len(y_points)-1])
+
 		x_points.append(int(graph[int(i[1])][1]))
 		y_points.append(int(graph[int(i[1])][2]))
 		ax.annotate(i[1],
@@ -129,8 +130,10 @@ def plot():
 			xy=( x_points[len(x_points)-1], 
 				y_points[len(y_points)-1]) )
 
+		plt.pyplot.scatter( x_points[len(x_points)-1], y_points[len(y_points)-1])
 
-	
+		plt.pyplot.plot(x_points[len(x_points)-2: ], y_points[len(y_points)-2:] )
+
 	'''
 	# this plots a scatter of the points
 	for i in graph:
@@ -139,9 +142,7 @@ def plot():
 		y_points.append(int(i[2]))
 	
 	'''
-	
-	plt.pyplot.scatter(x_points,y_points)
-	plt.pyplot.plot(x_points,y_points)
+	print x_points
 
 
 	plt.pyplot.show()
