@@ -69,7 +69,7 @@ $P_O$ & Picnic hams smoked on overtime \\
 Our objective is to maximize the net profit (N) equation given by:
 $N = 8 H_F + 14 H_R + 11 H_O + 4 B_F + 12 B_R + 7 B_R + 4 P_F + 13 P_R + 9 P_O$
 
-\paragraph{Constraints}. The production of hams is subject to the following constraints:
+\paragraph{Constraints.} The production of hams is subject to the following constraints:
 
 \begin{itemize}
 \item[] \textit{There are 480 hams, 400 pork bellies, and 230 picnic hams produced daily}. $H = 480$, $B = 400$, $P = 230$
@@ -77,7 +77,7 @@ $N = 8 H_F + 14 H_R + 11 H_O + 4 B_F + 12 B_R + 7 B_R + 4 P_F + 13 P_R + 9 P_O$
 \item[] \textit{Only 250 items can be smoked in overtime.} $H_O + B_O + P_O <= 250$
 \end{itemize}
 
-\paragraph{Linear equation} The linear equation matrix is as follows: \\
+\paragraph{Linear equation.} The linear equation matrix is as follows: \\
 \begin{align*}
 max: 8 H_F &+ 14 H_R + 11 H_O \\
 + 4 B_F &+ 12 B_R + 7 B_R \\ 
@@ -92,7 +92,7 @@ H_O + B_O + P_O &<= 250
 \end{align*}
 
 \paragraph{Optimal solution.} We found the optimal solution to be: \\
-\begin{tabular}{|c|c|cc|}
+\begin{tabular}{|c|c|c|c|}
 \hline 
 & Fresh & Smoked (regular time) & Smoked (overtime) \\ 
 \hline 
@@ -100,11 +100,19 @@ Hams & 440 & 0 & 40 \\
 Pork belly & 0 & 400 & 0 \\ 
 Picnic ham & 0 & 20 & 210 \\ 
 \hline 
-\multicolumn{3}{|c}{Total Net Profit:} & 10910.00 \\ 
+\multicolumn{3}{|c}{Total Net Profit:} & $\$$10910.00 \\ 
 \hline 
 \end{tabular} 
 
-\paragraph{Language/solver environment.} We used Python with the PuLP math package to solve the optimization problem. 
+\paragraph{Language/solver environment.} We used Python with the PuLP math package to solve the optimization problem.
+
+Each of the variables are declared using LpVariable().  There are additional options to add a printable variable name and minimum/maximum constraints, in this case 0.
+
+The problem is set up using LpProblem().  In here we specify that we want to maximize our objective with LpMaximize.
+
+Next we set up the objective to maximize on line 18. This is the same objective that we defined at the beginning of this report. 
+
+Starting on line 21 we enter in each of the constraints for the problem and then just run prob.solve(). Note: that we left out parts of the program to display results since it is not relevant for this report.  
 
 \begin{lstlisting}[language=python,caption={Code to solve linear program},mathescape]
 //set up variables, minimum of 0 for each
@@ -127,11 +135,11 @@ prob = LpProblem("Pork Profit", LpMaximize)
 prob += HAM_FRESH*8+HAM_SRT*14+HAM_SOT*11+PORK_FRESH*4+PORK_SRT*12+PORK_SOT*7+P_HAM_FRESH*4+P_HAM_SRT*13+P_HAM_SOT*9
 
 // constraints
-prob += HAM_FRESH+HAM_SRT+HAM_SOT <=480 # at most 480 ham
-prob += PORK_FRESH+PORK_SRT+PORK_SOT <= 400 # at most 400 pork
-prob += P_HAM_FRESH+P_HAM_SRT+P_HAM_SOT <= 230 # at most 230 picnic ham
-prob += HAM_SRT+PORK_SRT+P_HAM_SRT <= 420 # max 420 smoked on RT
-prob += HAM_SOT+PORK_SOT+P_HAM_SOT <= 250 # max 250 smoked on OT
+prob += HAM_FRESH+HAM_SRT+HAM_SOT <=480 // at most 480 ham
+prob += PORK_FRESH+PORK_SRT+PORK_SOT <= 400 // at most 400 pork
+prob += P_HAM_FRESH+P_HAM_SRT+P_HAM_SOT <= 230 // at most 230 picnic ham
+prob += HAM_SRT+PORK_SRT+P_HAM_SRT <= 420 // max 420 smoked on RT
+prob += HAM_SOT+PORK_SOT+P_HAM_SOT <= 250 // max 250 smoked on OT
 
 // The problem data is written to an .lp file
 prob.writeLP("porkprofit.lp")
@@ -144,11 +152,13 @@ prob.solve()
 
 \section*{Problem 2: }
 
-\paragraph{Objective.} \bigskip The objective here is to minimize the error between each point in the given data set and a regression line. Let E be the error and c be some constant. Then this equation is: 
+\paragraph{Objective.} \bigskip The objective here is to minimize the maximum absolute error between each point in the given data set and a regression line. Since the absolute value is not a linear function we have to split the equation into two.  
+
+Let E be the error and c be some constant. Then this equation is: 
 
 \begin{align*}
  min: \bigskip &|ax + by +c| \\
- Constraints: \bigskip E &>= y - (x_i * x + c) \\
+ Constraints: \bigskip E &>= y_i - (x_i * x + c) \\
  E &>= -y_i + (x_i * x + c)
 \end{align*}
 
@@ -161,12 +171,15 @@ prob.solve()
  C &= 1.85714 
 \end{align*}
 
+The setup for this problem is very similar to problem one.   We set our variables x,y,c as global to use them for our plotting function (not shown).  The points are stored in the points array.  A constraint is added for each individual point using both of the constraint equations defined above.  This time we set it up to minimize the objective (error) by using LpMinimize. 
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.8\textwidth]{figure_1}
 \caption{Plot of the best solution}
 \end{figure} 
 
+\pagebreak 
 
 \begin{lstlisting}[language=python,caption={Code to solve linear program},mathescape]
 
