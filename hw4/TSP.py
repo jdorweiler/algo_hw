@@ -108,15 +108,27 @@ def plot():
 	x_points = []
 	y_points = []
 
-	
+	fig, ax = plt.pyplot.subplots()
+
 	# this plots the MST
 	# separate x,y for plotting
 	for i in MST:
 		x_points.append(int(graph[int(i[0])][1]))
 		y_points.append(int(graph[int(i[0])][2]))
+		ax.annotate(i[0],
+			xytext=(-5,5), 
+			textcoords='offset points', 
+			xy=( x_points[len(x_points)-1], 
+				y_points[len(y_points)-1]) )
+
 		x_points.append(int(graph[int(i[1])][1]))
 		y_points.append(int(graph[int(i[1])][2]))
-		print x_points, y_points
+		ax.annotate(i[1],
+			xytext=(-5,5), 
+			textcoords='offset points', 
+			xy=( x_points[len(x_points)-1], 
+				y_points[len(y_points)-1]) )
+
 
 	
 	'''
@@ -130,6 +142,8 @@ def plot():
 	
 	plt.pyplot.scatter(x_points,y_points)
 	plt.pyplot.plot(x_points,y_points)
+
+
 	plt.pyplot.show()
 
 if __name__ == '__main__':
