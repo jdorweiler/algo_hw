@@ -10,8 +10,11 @@ graph = []
 # minimum spanning tree
 MST = []
 
-# distance matrix
+# dictionary of edges in form  { dist : [point1, point2]. .. }
 dist = {}
+
+# disjoint sets
+Sets = []
 
 def main(argv):
 	global graph, MST, dist
@@ -22,11 +25,14 @@ def main(argv):
 
 	getInput(argv)
 
+	# create a list of sets
+	for x in graph:
+		Sets.append(set({x[0]}))
+
 	# Generate a MST
 	getMST(graph, dist, MST)
 
 	print MST
-
 	# TODO: tour of mst to get solution
 
 	plot()
@@ -53,14 +59,22 @@ def getMST(graph, dist, MST):
 		# mst is empty, add lowest edge
 		if len(MST) == 0:
 			MST.append(dist[x])
-			#print "Adding edge: ", dist[x]
+			Sets[int(dist[x][0])] = Sets[int(dist[x][0])].union(Sets[int(dist[x][1])])
+			Sets.pop(int(dist[x][1]))
 		else:
 			# see if both points are in MST already
 			if(checkEdge(x, MST, dist)):
-				#print "Adding edge: ", dist[x]
+				print "Adding edge: ", dist[x]
 				MST.append(dist[x])
-		
+
+		if(len(Sets) == 1):
+			return
+	
 def checkEdge(x, MST, dist):
+	# check to see if both points are in the MST already
+	# if this is true then check to see if the points
+	# are part of the same set. If they are two 
+	# different sets then we add the edge to the MST
 	y_val = 0
 	x_val = 0
 
@@ -74,12 +88,35 @@ def checkEdge(x, MST, dist):
 	
 	# return 0 to skip this edge
 	if(x_val and y_val):
-		#print "Skipping edge: ", dist[x]
-		return 0
+		# check for disjoint sets
+		for s in Sets:
+			if((dist[x][0] in s) and (dist[x][1] in s)):
+				print "Skipping edge: ", dist[x]
+				return 0
+	# union the two points
+	findUnion(dist[x])
 
+	print Sets
 	return 1		
-		
 
+def findUnion(points):
+	ind1 = None
+	ind2 = None
+
+	for index, s in enumerate(Sets):
+		if(points[0] in s):
+			point1 = s
+			ind1 = index
+			print "point1: ", point1, index
+		if(points[1] in s):
+			point2 = s
+			ind2 = index
+	print ind1, ind2
+	if(ind1 == ind2):
+		return
+	Sets[ind1] = Sets[ind1].union(Sets[ind2])
+
+	Sets.pop(ind2)
 
 # read in the text file and tokenize into 
 # a list of lists [ [node, point1, point2] .... ]
