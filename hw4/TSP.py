@@ -16,8 +16,11 @@ dist = {}
 # disjoint sets
 Sets = []
 
+#total weights
+total = 0
+
 def main(argv):
-	global graph, MST, dist
+	global graph, MST, dist, total
 
 	if len(argv) < 2:
 		print " ***  No input file given, exiting  ***"
@@ -32,13 +35,16 @@ def main(argv):
 	# Generate a MST
 	getMST(graph, dist, MST)
 
-	print MST
+	#print "MST: ", MST
+
 	# TODO: tour of mst to get solution
 
+	print "Total weight: ", total
 	plot()
 
 
 def getMST(graph, dist, MST):
+	global total
 	# calculate the distances from our start
 	# to all other points in the graph
 	# this is in the form { dist : [point1, point2] ... }
@@ -61,15 +67,19 @@ def getMST(graph, dist, MST):
 			MST.append(dist[x])
 			Sets[int(dist[x][0])] = Sets[int(dist[x][0])].union(Sets[int(dist[x][1])])
 			Sets.pop(int(dist[x][1]))
+			total += x
 		else:
 			# see if both points are in MST already
 			if(checkEdge(x, MST, dist)):
-				print "Adding edge: ", dist[x]
+				#print "Added edge: ", dist[x]
 				MST.append(dist[x])
+				total += x
+				#plot()
 
 		if(len(Sets) == 1):
 			return
-	
+		
+
 def checkEdge(x, MST, dist):
 	# check to see if both points are in the MST already
 	# if this is true then check to see if the points
@@ -91,31 +101,42 @@ def checkEdge(x, MST, dist):
 		# check for disjoint sets
 		for s in Sets:
 			if((dist[x][0] in s) and (dist[x][1] in s)):
-				print "Skipping edge: ", dist[x]
+				#print "Skipping edge: ", dist[x]
 				return 0
 	# union the two points
-	findUnion(dist[x])
+	if(findUnion(dist[x]) == 0):
+		return 0
 
-	print Sets
+	#print "After: ", Sets
 	return 1		
 
 def findUnion(points):
+	# this check the list of sets and makes sure 
+	# that the two points are not in the same set
+	# already (ie creating a cycle).  If they are
+	# not in the same set it joins the two sets
 	ind1 = None
 	ind2 = None
 
+	#print "Before: ", Sets
 	for index, s in enumerate(Sets):
 		if(points[0] in s):
 			point1 = s
 			ind1 = index
-			print "point1: ", point1, index
 		if(points[1] in s):
 			point2 = s
 			ind2 = index
-	print ind1, ind2
-	if(ind1 == ind2):
-		return
+
+		if((ind1 == ind2) and (ind1 is not None)):
+			# both in the same set, return 0 to skip
+			return 0
+
+	#print "Joining: ", point1, point2, ind1, ind2
+
+	# join the two sets
 	Sets[ind1] = Sets[ind1].union(Sets[ind2])
 
+	# remove the extra one from the list
 	Sets.pop(ind2)
 
 # read in the text file and tokenize into 
@@ -179,9 +200,7 @@ def plot():
 		y_points.append(int(i[2]))
 	
 	'''
-	print x_points
-
-
+	
 	plt.pyplot.show()
 
 if __name__ == '__main__':
