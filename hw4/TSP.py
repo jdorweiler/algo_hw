@@ -43,7 +43,7 @@ def main(argv):
 
 	print "Points visited in order: ", visitedPoints
 	print "Total distance: ", total
-	plot()
+	plot(visitedPoints)
 
 def tour(MST, dist):
 	# MST is a list of edges that are included in our 
@@ -220,14 +220,14 @@ def getInput(argv):
 	# split into numbers on a space
 	graph = [x.split(' ') for x in graph] 
 
-def plot():
+def plot(visited):
 	global graph, MST
 
 	x_points = []
 	y_points = []
 
 	fig, ax = plt.pyplot.subplots()
-
+	'''
 	# this plots the MST
 	# separate x,y for plotting
 	for i in MST:
@@ -252,6 +252,7 @@ def plot():
 		plt.pyplot.scatter( x_points[len(x_points)-1], y_points[len(y_points)-1])
 
 		plt.pyplot.plot(x_points[len(x_points)-2: ], y_points[len(y_points)-2:] )
+	'''	
 
 	'''
 	# this plots a scatter of the points
@@ -261,7 +262,21 @@ def plot():
 		y_points.append(int(i[2]))
 	
 	'''
-	
+
+	for i in visited:
+		x_points.append(int(graph[int(i)][1]))
+		y_points.append(int(graph[int(i)][2]))
+		ax.annotate(i[0],
+			xytext=(-5,5), 
+			textcoords='offset points', 
+			xy=( x_points[len(x_points)-1], 
+				y_points[len(y_points)-1]) )
+
+		plt.pyplot.scatter( x_points[len(x_points)-1], y_points[len(y_points)-1])
+
+	plt.pyplot.plot(x_points, y_points)
+	print graph
+
 	plt.pyplot.show()
 
 if __name__ == '__main__':
