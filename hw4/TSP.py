@@ -3,6 +3,7 @@ import matplotlib as plt
 import sys
 import pylab
 import re
+from collections import deque
 
 # graph with x,y points
 graph = []
@@ -35,13 +36,76 @@ def main(argv):
 	# Generate a MST
 	getMST(graph, dist, MST)
 
-	#print "MST: ", MST
+	print "MST: ", MST
 
 	# TODO: tour of mst to get solution
+	visitedPoints = tour(MST, dist)
 
-	print "Total weight: ", total
+	print "Points visited in order: ", visitedPoints
+	print "Total distance: ", total
 	plot()
 
+def tour(MST, dist):
+	# MST is a list of edges that are included in our 
+	# minimum spanning tree.  
+	# Pick an edge from the MST, then choose one of the points
+	# in that edge as our starting point,  Look up the distances
+	# from that point to its neighbors (dist has these values)
+	# and push its neighbor points to a priority queue (BFS)
+	# add the current point to the list of visited points
+	# and repeat
+	global total
+	q = deque() # our priority queue
+	visited = [] # list of visited points
+	point = MST[0][0] # pick first point for now, try random later
+	start = point
+	#neighbors = {}
+
+	if not len(q):
+		q.append(point)
+
+	while len(q):
+		# get next point
+		point = q.popleft()
+		visited.append(point)
+		neighbors = {}
+		print "Visiting: ", point
+
+		# add neighbors
+		for x in MST:
+			# find all edges with this point in it
+			if point == x[0] or point == x[1]:
+				# add edges to neighbor list
+				for key, value in dist.items():
+					if x == value:
+						neighbors[key] = value
+		print neighbors
+		# push neighbors in sorted order to queue
+		for y in sorted(neighbors):
+			if neighbors[y][0] != point:
+				if neighbors[y][0] not in visited:
+					print "adding: ", neighbors[y][0]
+					q.append(neighbors[y][0])
+					total += y
+			elif neighbors[y][1] != point:
+				if neighbors[y][1] not in visited:
+					print "adding: ", neighbors[y][1]
+					q.append(neighbors[y][1])
+					total += y
+
+	# add the distance from the last point to the start
+	# point to the total
+	for y in dist:
+		if dist[y][0] == start and dist[y][1] == point:
+			total += y
+			break
+		if dist[y][1] == start and dist[y][0] == point:
+			total += y
+			break
+		
+	# append the start point to visited to complete the cycle
+	visited.append(start)
+	return visited
 
 def getMST(graph, dist, MST):
 	global total
@@ -67,19 +131,16 @@ def getMST(graph, dist, MST):
 			MST.append(dist[x])
 			Sets[int(dist[x][0])] = Sets[int(dist[x][0])].union(Sets[int(dist[x][1])])
 			Sets.pop(int(dist[x][1]))
-			total += x
 		else:
 			# see if both points are in MST already
 			if(checkEdge(x, MST, dist)):
 				#print "Added edge: ", dist[x]
 				MST.append(dist[x])
-				total += x
 				#plot()
 
 		if(len(Sets) == 1):
 			return
 		
-
 def checkEdge(x, MST, dist):
 	# check to see if both points are in the MST already
 	# if this is true then check to see if the points
@@ -127,8 +188,8 @@ def findUnion(points):
 			point2 = s
 			ind2 = index
 
+		# both in the same set, return 0 to skip
 		if((ind1 == ind2) and (ind1 is not None)):
-			# both in the same set, return 0 to skip
 			return 0
 
 	#print "Joining: ", point1, point2, ind1, ind2
@@ -139,9 +200,9 @@ def findUnion(points):
 	# remove the extra one from the list
 	Sets.pop(ind2)
 
-# read in the text file and tokenize into 
-# a list of lists [ [node, point1, point2] .... ]
 def getInput(argv):
+	# read in the text file and tokenize into 
+	# a list of lists [ [node, point1, point2] .... ]
 	global graph
 
 	with open(argv[1]) as file:
@@ -156,8 +217,6 @@ def getInput(argv):
 
 	# split into numbers on a space
 	graph = [x.split(' ') for x in graph] 
-
-
 
 def plot():
 	global graph, MST
