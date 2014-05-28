@@ -17,16 +17,15 @@ dist = {}
 # disjoint sets
 Sets = []
 
-#total weights
-total = 0
-
 def main(argv):
-	global graph, MST, dist, total
+	global graph, MST, dist
 
 	if len(argv) < 2:
 		print " ***  No input file given, exiting  ***"
 		return
 
+	total = 10000000000000
+	visitedPoints = []
 	getInput(argv)
 
 	# create a list of sets
@@ -39,13 +38,18 @@ def main(argv):
 	print "MST: ", MST
 
 	# TODO: tour of mst to get solution
-	visitedPoints = tour(MST, dist)
+	for start in range(1):
+		temp_total, temp_tour = tour(MST, dist, start)
+		#print temp_total, total
+		if temp_total < total and temp_total > 0:
+			total = temp_total
+			visitedPoints = temp_tour
 
 	print "Points visited in order: ", visitedPoints
 	print "Total distance: ", total
-	plot(visitedPoints)
+	#plot(visitedPoints)
 
-def tour(MST, dist):
+def tour(MST, dist, startPoint):
 	# MST is a list of edges that are included in our 
 	# minimum spanning tree.  
 	# Pick an edge from the MST, then choose one of the points
@@ -54,10 +58,10 @@ def tour(MST, dist):
 	# and push its neighbor points to a priority queue (BFS)
 	# add the current point to the list of visited points
 	# and repeat
-	global total
+	total = 0
 	q = deque() # our priority queue
 	visited = [] # list of visited points
-	point = MST[0][0] # pick first point for now, try random later
+	point = str(startPoint) # pick first point for now, try random later
 	start = point
 	#neighbors = {}
 
@@ -66,11 +70,11 @@ def tour(MST, dist):
 
 	while len(q):
 		# get next point
-		print "queue before pop: ", q
+		#print "queue before pop: ", q
 		point = q.popleft()
 		visited.append(point)
 		neighbors = {} # clear neighbors here??
-		print "Visiting: ", point
+		#print "Visiting: ", point
 
 		# add neighbors
 		for x in MST:
@@ -80,18 +84,17 @@ def tour(MST, dist):
 				for key, value in dist.items():
 					if x == value:
 						neighbors[key] = value
-		print neighbors
-		print visited
+
 		# push neighbors in sorted order to queue
 		for y in reversed(sorted(neighbors)):
 			if neighbors[y][0] != point:
 				if neighbors[y][0] not in visited:
-					print "adding: ", neighbors[y][0]
+					#print "adding: ", neighbors[y][0]
 					q.appendleft(neighbors[y][0])
-					total += y
+
 			elif neighbors[y][1] != point:
 				if neighbors[y][1] not in visited:
-					print "adding: ", neighbors[y][1]
+					#print "adding: ", neighbors[y][1]
 					q.appendleft(neighbors[y][1])
 					total += y
 
@@ -107,7 +110,7 @@ def tour(MST, dist):
 		
 	# append the start point to visited to complete the cycle
 	visited.append(start)
-	return visited
+	return total, visited
 
 def getMST(graph, dist, MST):
 	global total
@@ -266,7 +269,7 @@ def plot(visited):
 	for i in visited:
 		x_points.append(int(graph[int(i)][1]))
 		y_points.append(int(graph[int(i)][2]))
-		ax.annotate(i[0],
+		ax.annotate(i,
 			xytext=(-5,5), 
 			textcoords='offset points', 
 			xy=( x_points[len(x_points)-1], 
@@ -275,7 +278,7 @@ def plot(visited):
 		plt.pyplot.scatter( x_points[len(x_points)-1], y_points[len(y_points)-1])
 
 	plt.pyplot.plot(x_points, y_points)
-	print graph
+	#print graph
 
 	plt.pyplot.show()
 
