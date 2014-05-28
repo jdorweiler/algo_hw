@@ -66,9 +66,10 @@ def tour(MST, dist):
 
 	while len(q):
 		# get next point
+		print "queue before pop: ", q
 		point = q.popleft()
 		visited.append(point)
-		neighbors = {}
+		neighbors = {} # clear neighbors here??
 		print "Visiting: ", point
 
 		# add neighbors
@@ -80,17 +81,18 @@ def tour(MST, dist):
 					if x == value:
 						neighbors[key] = value
 		print neighbors
+		print visited
 		# push neighbors in sorted order to queue
-		for y in sorted(neighbors):
+		for y in reversed(sorted(neighbors)):
 			if neighbors[y][0] != point:
 				if neighbors[y][0] not in visited:
 					print "adding: ", neighbors[y][0]
-					q.append(neighbors[y][0])
+					q.appendleft(neighbors[y][0])
 					total += y
 			elif neighbors[y][1] != point:
 				if neighbors[y][1] not in visited:
 					print "adding: ", neighbors[y][1]
-					q.append(neighbors[y][1])
+					q.appendleft(neighbors[y][1])
 					total += y
 
 	# add the distance from the last point to the start
