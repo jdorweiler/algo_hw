@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import numpy as np 
 import matplotlib as plt
 import sys
@@ -21,7 +23,7 @@ def main(argv):
 	global graph, MST, dist
 
 	if len(argv) < 2:
-		print " ***  No input file given, exiting  ***"
+		print "usage: ", argv[0], " [input_file]"
 		return
 
 	total = 10000000000000
@@ -37,17 +39,38 @@ def main(argv):
 
 	print "MST: ", MST
 
-	# TODO: tour of mst to get solution
-	for start in range(1):
+	# Change number of iterations based on how many elements are in the MST
+	max_search = 1
+	if len(MST) < 100:
+		max_search = len(MST)
+	elif len(MST) < 200:
+		max_search = len(MST)/4
+	else:
+		max_search = int(np.sqrt(len(MST)))
+
+
+	for start in range(0,max_search):
 		temp_total, temp_tour = tour(MST, dist, start)
 		#print temp_total, total
 		if temp_total < total and temp_total > 0:
 			total = temp_total
 			visitedPoints = temp_tour
+		print "started at", start, ". Distance=", temp_total
 
 	print "Points visited in order: ", visitedPoints
 	print "Total distance: ", total
+	print "Writing output file..."
+
+	f = open(argv[1] + ".tour", 'w')
+	f.write(str(total) + '\n')
+	for city in visitedPoints:
+		f.write(str(city) + '\n')
+	f.close()
+	print "Output written to:", argv[0] + ".tour"
+	
 	#plot(visitedPoints)
+
+
 
 def tour(MST, dist, startPoint):
 	# MST is a list of edges that are included in our 
@@ -59,10 +82,13 @@ def tour(MST, dist, startPoint):
 	# add the current point to the list of visited points
 	# and repeat
 	total = 0
-	q = deque() # our priority queue
+
+	##q = deque() # our priority queue
+
 	visited = [] # list of visited points
 	point = str(startPoint) # pick first point for now, try random later
 	start = point
+	q = [start]    # using a stack for DFS for pre-order walk
 	#neighbors = {}
 
 	if not len(q):
@@ -71,7 +97,7 @@ def tour(MST, dist, startPoint):
 	while len(q):
 		# get next point
 		#print "queue before pop: ", q
-		point = q.popleft()
+		point = q.pop()
 		visited.append(point)
 		neighbors = {} # clear neighbors here??
 		#print "Visiting: ", point
@@ -85,17 +111,18 @@ def tour(MST, dist, startPoint):
 					if x == value:
 						neighbors[key] = value
 
-		# push neighbors in sorted order to queue
+		# push neighbors in sorted distance order to queue
 		for y in reversed(sorted(neighbors)):
+			#print y
 			if neighbors[y][0] != point:
 				if neighbors[y][0] not in visited:
 					#print "adding: ", neighbors[y][0]
-					q.appendleft(neighbors[y][0])
+					q.append(neighbors[y][0])
 
 			elif neighbors[y][1] != point:
 				if neighbors[y][1] not in visited:
 					#print "adding: ", neighbors[y][1]
-					q.appendleft(neighbors[y][1])
+					q.append(neighbors[y][1])
 					total += y
 
 	# add the distance from the last point to the start
