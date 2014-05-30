@@ -41,15 +41,16 @@ def main(argv):
 
 	# Change number of iterations based on how many elements are in the MST
 	max_search = 1
-	if len(MST) < 100:
+	'''if len(MST) < 100:
 		max_search = len(MST)
 	elif len(MST) < 200:
 		max_search = len(MST)/4
 	else:
 		max_search = int(np.sqrt(len(MST)))
+	'''
 
 
-	for start in range(0,max_search):
+	for start in range(0,len(MST)):
 		temp_total, temp_tour = tour(MST, dist, start)
 		#print temp_total, total
 		if temp_total < total and temp_total > 0:
