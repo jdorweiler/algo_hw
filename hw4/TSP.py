@@ -5,6 +5,7 @@ import sys
 import pylab
 import re
 from collections import deque
+import copy as copy
 
 # graph with x,y points
 graph = []
@@ -37,27 +38,30 @@ def main(argv):
 	getMST(graph, dist, MST)
 
 	print "MST: ", MST
+	print "dist: ", dist
 
 	# Change number of iterations based on how many elements are in the MST
 	max_search = 1
-	if len(MST) < 100:
+	'''if len(MST) < 100:
 		max_search = len(MST)
 	elif len(MST) < 200:
 		max_search = len(MST)/4
 	else:
 		max_search = int(np.sqrt(len(MST)))
+	'''
 
 
-	for start in range(0,max_search):
+	for start in range(0,len(MST)):
 		temp_total, temp_tour = tour(MST, dist, start)
 		print temp_total, total
 		if temp_total < total and temp_total > 0:
 			total = temp_total
-			visitedPoints = temp_tour
+			visitedPoints = copy.deepcopy(temp_tour)
+			print "found shorter tour"
 		print "started at", start, ". Distance=", temp_total
+		print "visited order:", visitedPoints
 
 	print "Points visited in order: ", visitedPoints
-	print "Total distance: ", total
 	print "Writing output file..."
 
 	f = open(argv[1] + ".tour", 'w')
@@ -125,6 +129,7 @@ def tour(MST, dist, startPoint):
 					q.append(neighbors[y][1])
 					total += y
 
+
 	# add the distance from the last point to the start
 	# point to the total
 	for y in dist:
@@ -136,7 +141,7 @@ def tour(MST, dist, startPoint):
 			break
 		
 	# append the start point to visited to complete the cycle
-	visited.append(start)
+	visited.append(start)   # grader doesn't want first point put in again
 
 	return total, visited
 
