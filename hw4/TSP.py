@@ -1,5 +1,4 @@
 #!/usr/bin/env python2
-
 import numpy as np 
 import matplotlib as plt
 import sys
@@ -52,7 +51,7 @@ def main(argv):
 
 	for start in range(0,len(MST)):
 		temp_total, temp_tour = tour(MST, dist, start)
-		#print temp_total, total
+		print temp_total, total
 		if temp_total < total and temp_total > 0:
 			total = temp_total
 			visitedPoints = temp_tour
@@ -64,12 +63,12 @@ def main(argv):
 
 	f = open(argv[1] + ".tour", 'w')
 	f.write(str(total) + '\n')
-	for city in visitedPoints:
-		f.write(str(city) + '\n')
+	for city in range(len(visitedPoints)-1):
+		f.write(str(visitedPoints[city] + '\n'))
 	f.close()
-	print "Output written to:", argv[0] + ".tour"
-	
-	#plot(visitedPoints)
+	print "Output written to:", argv[1] + ".tour"
+
+	plot(visitedPoints)
 
 
 
@@ -119,6 +118,7 @@ def tour(MST, dist, startPoint):
 				if neighbors[y][0] not in visited:
 					#print "adding: ", neighbors[y][0]
 					q.append(neighbors[y][0])
+					total += y
 
 			elif neighbors[y][1] != point:
 				if neighbors[y][1] not in visited:
@@ -138,6 +138,7 @@ def tour(MST, dist, startPoint):
 		
 	# append the start point to visited to complete the cycle
 	visited.append(start)
+
 	return total, visited
 
 def getMST(graph, dist, MST):
