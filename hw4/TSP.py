@@ -6,6 +6,7 @@ import pylab
 import re
 from collections import deque
 import copy as copy
+import math
 
 # graph with x,y points
 graph = []
@@ -20,7 +21,7 @@ dist = {}
 Sets = []
 
 def main(argv):
-	global graph, MST, dist
+	global graph, MST, dist, edge_matrix
 
 	if len(argv) < 2:
 		print "usage: ", argv[0], " [input_file]"
@@ -37,8 +38,9 @@ def main(argv):
 	# Generate a MST
 	getMST(graph, dist, MST)
 
-	print "MST: ", MST
-	print "dist: ", dist
+	#print "MST: ", MST
+	#print "dist: ", dist
+        #print graph
 
 	# Change number of iterations based on how many elements are in the MST
 	max_search = 1
@@ -51,15 +53,15 @@ def main(argv):
 	'''
 
 
-	for start in range(0,len(MST)):
+	for start in range(0,1):
 		temp_total, temp_tour = tour(MST, dist, start)
-		print temp_total, total
+		#print temp_total, total
 		if temp_total < total and temp_total > 0:
 			total = temp_total
 			visitedPoints = copy.deepcopy(temp_tour)
 			print "found shorter tour"
 		print "started at", start, ". Distance=", temp_total
-		print "visited order:", visitedPoints
+		#print "visited order:", visitedPoints
 
 	print "Points visited in order: ", visitedPoints
 	print "Writing output file..."
@@ -71,7 +73,7 @@ def main(argv):
 	f.close()
 	print "Output written to:", argv[1] + ".tour"
 
-	plot(visitedPoints)
+	#plot(visitedPoints)
 
 
 
@@ -94,6 +96,8 @@ def tour(MST, dist, startPoint):
 	q = [start]    # using a stack for DFS for pre-order walk
 	#neighbors = {}
 
+        #print "==MST: ", MST
+
 	if not len(q):
 		q.append(point)
 
@@ -101,33 +105,54 @@ def tour(MST, dist, startPoint):
 		# get next point
 		#print "queue before pop: ", q
 		point = q.pop()
+                if visited:
+                    total += dist_matrix[ (visited[-1], point) ]
+                    print "Adding segment ", (visited[-1], point)
+                    print "==Total: ", total
 		visited.append(point)
 		neighbors = {} # clear neighbors here??
 		#print "Visiting: ", point
 
 		# add neighbors
 		for x in MST:
+                        #print "x in MST: ", x
 			# find all edges with this point in it
 			if point == x[0] or point == x[1]:
 				# add edges to neighbor list
 				for key, value in dist.items():
 					if x == value:
+                                                #print "Added ", value, " to neighbors"
 						neighbors[key] = value
 
+                print "===NEIGHBORS: ",sorted(neighbors)
 		# push neighbors in sorted distance order to queue
-		for y in reversed(sorted(neighbors)):
-			#print y
-			if neighbors[y][0] != point:
-				if neighbors[y][0] not in visited:
-					#print "adding: ", neighbors[y][0]
-					q.append(neighbors[y][0])
-					total += y
 
+		for y in reversed(sorted(neighbors)):
+                        #print "Looking at edge ", y, "for point", point
+                        #print "neighbor[y][0]=", neighbors[y][0]
+                        #print "neighbor[y][1]=", neighbors[y][1]
+
+
+                        # add all unvisited neighbors to queue
+                        if (neighbors[y][0] == point and neighbors[y][1] not in visited):
+                                #print "adding [y][1]: ", neighbors[y][1]
+                                q.append(neighbors[y][1])
+                        elif (neighbors[y][1] == point and neighbors[y][0] not in visited):
+                                #print "adding [y][0]: ", neighbors[y][0]
+                                q.append(neighbors[y][0])
+                        '''
+                        else:
+                                print "Edge [", neighbors[y][0], ",", neighbors[y][1], "] already in visited"
+                        '''
+
+                        '''
 			elif neighbors[y][1] != point:
 				if neighbors[y][1] not in visited:
-					#print "adding: ", neighbors[y][1]
+					print "adding: ", neighbors[y][1]
 					q.append(neighbors[y][1])
 					total += y
+                        '''
+
 
 
 	# add the distance from the last point to the start
@@ -145,16 +170,23 @@ def tour(MST, dist, startPoint):
 
 	return total, visited
 
+
 def getMST(graph, dist, MST):
 	global total
+        global dist_matrix 
 	# calculate the distances from our start
 	# to all other points in the graph
 	# this is in the form { dist : [point1, point2] ... }
 	# so that we can iterate through them in sorted order
+
+        dist_matrix = {}
 	for point1 in graph:
 		for point2 in graph:
 			# add the distance from point1 to point2
-			dist[int(np.sqrt( (int(point1[1])-int(point2[1]))**2 + (int(point1[2])-int(point2[2]))**2 ))] = [point1[0], point2[0]]
+                        d = int(round(math.sqrt( (int(point1[1])-int(point2[1]))**2 + (int(point1[2])-int(point2[2]))**2 )))
+			dist[d] = [point1[0], point2[0]]
+                        dist_matrix[(point1[0], point2[0])] = d
+                        dist_matrix[(point2[0], point1[0])] = d
 
 	# go through the list of edges in sorted order
 	# check each edge using checkEdge to see if both
