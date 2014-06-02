@@ -1,8 +1,8 @@
 #!/usr/bin/env python2
 import numpy as np 
-import matplotlib as plt
+#import matplotlib as plt
 import sys
-import pylab
+#import pylab
 import re
 from collections import defaultdict
 import copy as copy
@@ -33,7 +33,7 @@ def main(argv):
 
     # create a list of sets
     for x in graph:
-        Sets.append(set({x[0]}))
+        Sets.append(set([x[0]]))
 
     # Generate a MST
     getMST(graph, dist, MST)
