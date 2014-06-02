@@ -1,0 +1,6616 @@
+-- running with test-input-4 --
+python TSP.py test-input-4.txt
+0 ['191', '191']
+3 ['41', '12']
+7 ['113', '34']
+8 ['155', '95']
+9 ['117', '115']
+12 ['161', '127']
+13 ['182', '83']
+14 ['131', '125']
+16 ['101', '0']
+17 ['146', '35']
+18 ['190', '184']
+19 ['85', '9']
+20 ['170', '96']
+21 ['179', '45']
+22 ['184', '123']
+found x
+23 ['189', '136']
+24 ['190', '89']
+found x
+25 ['189', '85']
+found y
+found x
+26 ['175', '24']
+27 ['182', '61']
+found x
+28 ['114', '17']
+29 ['171', '116']
+30 ['181', '51']
+31 ['163', '45']
+found y
+32 ['39', '26']
+33 ['179', '163']
+found x
+found y
+34 ['183', '116']
+found y
+35 ['184', '125']
+found y
+found x
+36 ['175', '54']
+found x
+37 ['190', '125']
+found y
+found x
+38 ['184', '131']
+found y
+found x
+39 ['150', '37']
+40 ['184', '181']
+found x
+found x
+found y
+41 ['189', '9']
+found y
+found x
+42 ['100', '22']
+43 ['130', '47']
+44 ['131', '51']
+found x
+found y
+45 ['174', '33']
+46 ['190', '131']
+found y
+found x
+47 ['172', '7']
+48 ['185', '52']
+49 ['169', '128']
+50 ['153', '42']
+51 ['144', '24']
+found y
+52 ['186', '100']
+found y
+53 ['186', '22']
+found y
+found x
+54 ['191', '110']
+55 ['191', '136']
+found y
+found x
+56 ['69', '39']
+found y
+57 ['190', '181']
+found x
+found x
+found y
+58 ['175', '145']
+found x
+found x
+59 ['181', '123']
+found y
+found x
+60 ['177', '4']
+61 ['168', '130']
+found y
+62 ['183', '171']
+found y
+found x
+63 ['190', '57']
+found x
+found x
+64 ['191', '126']
+found x
+found x
+65 ['184', '51']
+found x
+found x
+found y
+66 ['189', '126']
+found x
+found x
+found y
+67 ['191', '3']
+found x
+found x
+found x
+68 ['169', '64']
+found x
+69 ['178', '48']
+70 ['191', '189']
+found y
+found y
+found x
+71 ['179', '120']
+found x
+72 ['189', '110']
+found x
+found x
+found y
+73 ['188', '130']
+found y
+found y
+74 ['172', '135']
+found x
+75 ['139', '133']
+76 ['176', '39']
+found y
+found y
+77 ['177', '157']
+found x
+78 ['179', '16']
+found x
+found x
+79 ['181', '89']
+found y
+found x
+80 ['134', '1']
+81 ['190', '51']
+found x
+found x
+found y
+82 ['187', '54']
+found y
+83 ['125', '111']
+found x
+found x
+84 ['191', '85']
+found y
+found y
+found x
+85 ['189', '91']
+found x
+found x
+86 ['191', '9']
+found y
+found x
+87 ['173', '95']
+found y
+88 ['188', '97']
+found x
+89 ['156', '127']
+found y
+90 ['187', '175']
+found y
+found y
+found y
+found x
+91 ['187', '141']
+found x
+92 ['178', '161']
+found y
+found x
+93 ['170', '61']
+found x
+found y
+94 ['187', '70']
+found x
+found x
+95 ['172', '143']
+found x
+found x
+96 ['173', '14']
+found x
+97 ['186', '93']
+found x
+98 ['191', '91']
+found x
+found x
+found x
+found x
+found y
+99 ['181', '20']
+found x
+found x
+100 ['166', '50']
+101 ['185', '34']
+found y
+found x
+102 ['182', '119']
+found x
+found x
+103 ['185', '113']
+found y
+found x
+104 ['177', '62']
+found x
+found x
+105 ['190', '20']
+found x
+found x
+found x
+found y
+106 ['191', '154']
+found x
+found x
+found x
+found x
+107 ['191', '53']
+found x
+found x
+found x
+found x
+found x
+108 ['182', '160']
+found x
+found x
+found x
+109 ['149', '121']
+110 ['188', '152']
+found x
+found x
+111 ['182', '89']
+found x
+found y
+112 ['184', '160']
+found x
+found x
+found x
+found x
+found y
+113 ['183', '50']
+found x
+found y
+114 ['188', '47']
+found y
+found x
+115 ['181', '111']
+found x
+found x
+found y
+116 ['187', '132']
+found x
+found x
+found x
+117 ['190', '111']
+found x
+found x
+found x
+found y
+118 ['186', '94']
+found x
+found x
+119 ['190', '160']
+found x
+found x
+found x
+found y
+120 ['181', '57']
+found x
+found x
+found y
+121 ['185', '31']
+found x
+found x
+122 ['190', '112']
+found x
+found x
+found x
+123 ['178', '91']
+found x
+found y
+124 ['186', '151']
+found x
+found x
+found x
+125 ['191', '122']
+found x
+found x
+found x
+found x
+found x
+found x
+126 ['174', '76']
+found x
+127 ['188', '40']
+found x
+found x
+found x
+128 ['191', '18']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+129 ['181', '30']
+found x
+found x
+found x
+130 ['178', '166']
+found x
+found x
+found y
+131 ['186', '79']
+found x
+found x
+found x
+found x
+132 ['190', '182']
+found y
+found x
+133 ['190', '83']
+found y
+found x
+134 ['182', '25']
+found x
+found x
+found x
+found x
+found x
+135 ['186', '31']
+found x
+found x
+found x
+found y
+136 ['179', '168']
+found x
+found y
+137 ['189', '3']
+found x
+found x
+found y
+138 ['184', '108']
+found x
+found x
+found x
+found x
+139 ['191', '72']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+140 ['189', '6']
+found x
+found x
+found x
+141 ['190', '119']
+found x
+found x
+found x
+found y
+142 ['190', '14']
+found x
+found x
+found x
+found y
+143 ['185', '58']
+found x
+found x
+found x
+144 ['178', '162']
+found x
+found x
+found x
+found x
+145 ['190', '61']
+found x
+found x
+found y
+146 ['191', '81']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+147 ['183', '136']
+found y
+found x
+148 ['144', '104']
+found x
+149 ['190', '108']
+found x
+found x
+found x
+found x
+found y
+150 ['179', '40']
+found x
+found x
+found x
+found y
+151 ['184', '61']
+found x
+found x
+found y
+152 ['186', '80']
+found x
+found x
+found x
+found x
+found x
+found x
+153 ['184', '14']
+found x
+found x
+found x
+found x
+found y
+154 ['187', '65']
+found x
+found x
+found x
+found x
+155 ['162', '103']
+found x
+156 ['189', '50']
+found x
+found x
+found x
+found y
+157 ['188', '137']
+found x
+found x
+found x
+found x
+158 ['191', '106']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+159 ['189', '116']
+found x
+found x
+found y
+160 ['184', '30']
+found x
+found x
+found x
+found x
+found y
+161 ['184', '155']
+found y
+found x
+162 ['186', '62']
+found x
+found x
+found y
+163 ['190', '25']
+found x
+found x
+found x
+found x
+found y
+164 ['178', '156']
+found x
+found y
+165 ['165', '94']
+found y
+166 ['186', '145']
+found x
+found y
+167 ['184', '95']
+found y
+found x
+168 ['190', '155']
+found y
+found x
+169 ['190', '173']
+found x
+found x
+found x
+found y
+170 ['183', '126']
+found x
+found y
+171 ['184', '173']
+found x
+found x
+found x
+found x
+found y
+172 ['189', '53']
+found x
+found x
+found x
+found y
+173 ['191', '178']
+found x
+found x
+found x
+found x
+found y
+174 ['190', '95']
+found y
+found x
+175 ['167', '3']
+found y
+176 ['187', '157']
+found y
+found x
+177 ['186', '58']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+178 ['190', '30']
+found x
+found x
+found x
+found x
+found y
+179 ['168', '120']
+found x
+found y
+180 ['185', '73']
+found x
+found x
+found x
+found x
+181 ['191', '87']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+182 ['187', '103']
+found x
+found x
+found x
+found x
+found x
+found y
+183 ['186', '104']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+184 ['187', '161']
+found y
+found x
+185 ['189', '81']
+found x
+found x
+found x
+found x
+found y
+186 ['173', '123']
+found y
+found x
+187 ['189', '171']
+found x
+found x
+found y
+188 ['186', '63']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+189 ['188', '149']
+found x
+found x
+found y
+190 ['184', '97']
+found x
+found x
+found x
+found x
+found y
+191 ['186', '54']
+found y
+found x
+192 ['189', '166']
+found x
+found x
+found x
+found y
+193 ['191', '162']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+194 ['187', '93']
+found x
+found x
+found x
+found y
+195 ['191', '48']
+found x
+found x
+found x
+found x
+found y
+196 ['190', '97']
+found x
+found x
+found x
+found y
+197 ['189', '48']
+found x
+found x
+found y
+198 ['191', '183']
+found y
+found x
+199 ['189', '178']
+found x
+found x
+found y
+200 ['187', '142']
+found x
+found x
+found x
+found x
+found x
+found x
+201 ['190', '92']
+found x
+found x
+found x
+found x
+found x
+202 ['188', '114']
+found y
+found x
+203 ['187', '94']
+found x
+found x
+found x
+found x
+found y
+204 ['188', '16']
+found x
+found y
+205 ['183', '166']
+found x
+found y
+206 ['166', '116']
+found y
+found y
+found x
+207 ['191', '50']
+found x
+found x
+found x
+found x
+found y
+208 ['191', '6']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+209 ['190', '117']
+found y
+found x
+210 ['186', '175']
+found y
+found y
+found x
+211 ['188', '49']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+212 ['191', '166']
+found x
+found x
+found x
+found x
+found y
+213 ['179', '104']
+found x
+found x
+found x
+found x
+found y
+214 ['179', '41']
+found y
+found x
+215 ['190', '115']
+found y
+found x
+216 ['189', '87']
+found x
+found x
+found x
+found x
+found y
+217 ['188', '64']
+found y
+found x
+218 ['189', '11']
+found x
+found x
+found x
+found x
+219 ['179', '170']
+found y
+found x
+220 ['182', '0']
+found x
+found y
+221 ['184', '47']
+found x
+found x
+found x
+found x
+found y
+222 ['175', '165']
+found x
+found x
+found x
+found y
+223 ['187', '88']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+224 ['188', '146']
+found y
+found x
+225 ['186', '44']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+226 ['188', '182']
+found y
+found y
+found x
+227 ['190', '21']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+228 ['191', '116']
+found y
+found y
+found x
+229 ['185', '42']
+found x
+found y
+230 ['186', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+231 ['172', '120']
+found x
+found y
+232 ['184', '115']
+found y
+found x
+233 ['184', '130']
+found x
+found x
+found x
+found x
+found y
+234 ['191', '167']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+235 ['182', '20']
+found x
+found x
+found y
+236 ['190', '170']
+found x
+found y
+237 ['190', '47']
+found x
+found x
+found y
+238 ['191', '138']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+239 ['191', '74']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+240 ['188', '123']
+found y
+found x
+241 ['181', '168']
+found x
+found x
+found y
+242 ['167', '52']
+found y
+found x
+243 ['185', '157']
+found x
+found y
+244 ['172', '140']
+found x
+found x
+found x
+found x
+245 ['188', '184']
+found y
+found y
+found y
+found y
+found x
+246 ['190', '147']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+247 ['190', '130']
+found x
+found x
+found y
+248 ['190', '96']
+found x
+found y
+249 ['187', '87']
+found x
+found x
+found x
+found x
+found x
+found y
+250 ['187', '170']
+found y
+found x
+251 ['179', '83']
+found y
+found x
+252 ['184', '168']
+found x
+found x
+found x
+found x
+found y
+253 ['191', '103']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+254 ['187', '37']
+found y
+found x
+255 ['189', '162']
+found x
+found x
+found x
+found x
+found y
+256 ['191', '171']
+found y
+found x
+257 ['187', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+258 ['188', '169']
+found y
+found y
+found x
+259 ['188', '135']
+found x
+found y
+260 ['188', '90']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+261 ['186', '70']
+found x
+found y
+262 ['189', '138']
+found x
+found x
+found x
+found x
+found x
+found y
+263 ['191', '161']
+found y
+found x
+264 ['190', '168']
+found x
+found x
+found y
+265 ['183', '3']
+found x
+found y
+266 ['188', '118']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+267 ['187', '186']
+found y
+found x
+268 ['182', '47']
+found x
+found x
+found y
+269 ['187', '151']
+found x
+found x
+found x
+found x
+found y
+270 ['190', '105']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+271 ['188', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+272 ['188', '131']
+found y
+found x
+273 ['191', '127']
+found y
+found x
+274 ['187', '100']
+found y
+found y
+found x
+275 ['177', '151']
+found x
+found x
+found x
+found y
+276 ['186', '113']
+found y
+found x
+277 ['188', '125']
+found y
+found y
+found x
+278 ['185', '109']
+found x
+found x
+found x
+found x
+found x
+found x
+279 ['187', '86']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+280 ['190', '101']
+found y
+found x
+281 ['191', '11']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+282 ['187', '68']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+283 ['182', '77']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+284 ['179', '93']
+found x
+found x
+found x
+found y
+285 ['190', '33']
+found x
+found x
+found y
+286 ['177', '146']
+found y
+found x
+287 ['183', '26']
+found y
+found x
+288 ['190', '13']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+289 ['189', '86']
+found x
+found x
+found x
+found x
+found x
+found y
+290 ['190', '137']
+found x
+found x
+found x
+found x
+found x
+found y
+291 ['188', '128']
+found y
+found x
+292 ['190', '0']
+found y
+found x
+293 ['191', '86']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+294 ['191', '124']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+295 ['181', '67']
+found x
+found x
+found x
+found x
+296 ['182', '152']
+found x
+found x
+found x
+found x
+found y
+297 ['188', '121']
+found x
+found x
+found y
+298 ['179', '29']
+found x
+found x
+found x
+found x
+found x
+found x
+299 ['184', '13']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+300 ['182', '155']
+found y
+found x
+301 ['189', '127']
+found y
+found x
+302 ['191', '68']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+303 ['189', '167']
+found x
+found x
+found x
+found x
+found y
+304 ['179', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+305 ['189', '26']
+found x
+found x
+found y
+306 ['185', '70']
+found x
+found y
+307 ['188', '7']
+found y
+found x
+308 ['189', '99']
+found x
+found x
+found x
+found x
+found x
+309 ['187', '66']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+310 ['180', '66']
+found y
+311 ['182', '142']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+312 ['186', '5']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+313 ['190', '35']
+found y
+found x
+314 ['190', '174']
+found x
+found x
+found y
+315 ['184', '45']
+found x
+found y
+316 ['184', '163']
+found x
+found x
+found y
+317 ['181', '45']
+found y
+found x
+318 ['180', '107']
+found x
+319 ['184', '67']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+320 ['191', '73']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+321 ['190', '163']
+found x
+found x
+found y
+322 ['187', '2']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+323 ['191', '157']
+found x
+found x
+found x
+found x
+found y
+324 ['185', '162']
+found x
+found x
+found x
+found x
+found y
+325 ['187', '27']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+326 ['183', '98']
+found x
+found x
+found x
+327 ['181', '105']
+found x
+found x
+found x
+found x
+found y
+328 ['182', '137']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+329 ['190', '146']
+found y
+found x
+330 ['191', '26']
+found y
+found x
+331 ['189', '69']
+found x
+found x
+found y
+332 ['187', '18']
+found x
+found x
+found x
+found x
+found y
+333 ['181', '35']
+found y
+found x
+334 ['191', '156']
+found x
+found x
+found x
+found x
+found y
+335 ['189', '39']
+found x
+found x
+found y
+336 ['184', '179']
+found x
+found y
+337 ['187', '53']
+found x
+found x
+found x
+found y
+338 ['191', '15']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+339 ['190', '77']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+340 ['191', '99']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+341 ['190', '179']
+found x
+found y
+342 ['187', '61']
+found y
+found x
+343 ['188', '141']
+found x
+found x
+found y
+344 ['191', '28']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+345 ['185', '145']
+found x
+found y
+346 ['169', '54']
+found y
+found x
+347 ['189', '156']
+found x
+found x
+found x
+found y
+348 ['184', '152']
+found x
+found x
+found x
+found x
+found y
+349 ['182', '144']
+found x
+found x
+found y
+350 ['182', '40']
+found x
+found x
+found x
+found x
+found x
+found y
+351 ['176', '146']
+found y
+found x
+352 ['188', '111']
+found x
+found y
+353 ['191', '70']
+found x
+found x
+found x
+found x
+found y
+354 ['187', '34']
+found y
+found x
+355 ['189', '98']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+356 ['191', '39']
+found y
+found x
+357 ['187', '166']
+found x
+found x
+found x
+found y
+358 ['188', '145']
+found y
+found x
+359 ['188', '175']
+found y
+found y
+found y
+found x
+360 ['186', '35']
+found y
+found x
+361 ['189', '28']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+362 ['183', '103']
+found x
+found x
+found y
+363 ['191', '69']
+found x
+found x
+found y
+364 ['187', '97']
+found x
+found y
+365 ['188', '32']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+366 ['191', '4']
+found x
+found x
+found y
+367 ['190', '66']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+368 ['187', '0']
+found y
+found x
+369 ['189', '68']
+found x
+found x
+found x
+found x
+found x
+found y
+370 ['191', '88']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+371 ['187', '185']
+found y
+found x
+372 ['182', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+373 ['186', '179']
+found y
+found x
+374 ['187', '42']
+found y
+found x
+375 ['189', '176']
+found x
+found x
+found y
+376 ['174', '15']
+found x
+found x
+found y
+377 ['191', '177']
+found x
+found x
+found y
+378 ['191', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+379 ['190', '40']
+found x
+found x
+found x
+found x
+found y
+380 ['189', '82']
+found x
+found x
+found x
+found x
+found x
+found x
+381 ['191', '98']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+382 ['190', '27']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+383 ['191', '176']
+found x
+found x
+found x
+found x
+found y
+384 ['190', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+385 ['189', '78']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+386 ['188', '151']
+found x
+found x
+found x
+found y
+387 ['182', '145']
+found x
+found x
+found y
+388 ['177', '66']
+found x
+found x
+found x
+found y
+389 ['186', '162']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+390 ['189', '73']
+found x
+found x
+found x
+found x
+found y
+391 ['182', '76']
+found x
+found x
+found x
+found x
+found x
+found y
+392 ['188', '139']
+found x
+found y
+393 ['190', '159']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+394 ['188', '54']
+found y
+found x
+395 ['184', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+396 ['191', '37']
+found y
+found x
+397 ['188', '14']
+found x
+found x
+found y
+398 ['191', '113']
+found y
+found x
+399 ['189', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+400 ['190', '49']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+401 ['185', '104']
+found x
+found x
+found x
+found x
+found y
+402 ['189', '70']
+found x
+found x
+found x
+found y
+403 ['191', '78']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+404 ['187', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+405 ['188', '173']
+found x
+found y
+406 ['186', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+407 ['190', '16']
+found x
+found x
+found x
+found y
+408 ['182', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+409 ['190', '120']
+found x
+found x
+found x
+found y
+410 ['190', '114']
+found x
+found x
+found y
+411 ['189', '4']
+found x
+found x
+found y
+412 ['188', '187']
+found x
+found y
+413 ['188', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+414 ['187', '160']
+found x
+found x
+found x
+found y
+415 ['188', '71']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+416 ['190', '102']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+417 ['191', '150']
+found y
+found x
+418 ['187', '58']
+found x
+found x
+found x
+found x
+found y
+419 ['182', '114']
+found x
+found x
+found y
+420 ['191', '62']
+found x
+found x
+found x
+found x
+found y
+421 ['184', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+422 ['190', '142']
+found x
+found x
+found x
+found x
+found x
+found y
+423 ['187', '105']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+424 ['191', '187']
+found x
+found x
+found x
+found x
+found y
+425 ['177', '85']
+found y
+found y
+found x
+426 ['185', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+427 ['183', '167']
+found x
+found x
+found y
+428 ['187', '168']
+found y
+found x
+429 ['179', '101']
+found y
+found x
+430 ['190', '17']
+found x
+found x
+found y
+431 ['189', '102']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+432 ['184', '102']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+433 ['182', '17']
+found x
+found x
+found y
+434 ['190', '82']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+435 ['180', '82']
+found x
+found x
+found y
+436 ['187', '9']
+found y
+found x
+437 ['190', '176']
+found x
+found x
+found x
+found y
+438 ['190', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+439 ['182', '169']
+found x
+found x
+found y
+440 ['182', '94']
+found x
+found x
+found x
+found x
+found x
+found y
+441 ['188', '147']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+442 ['176', '97']
+found x
+found y
+443 ['190', '149']
+found x
+found x
+found x
+found y
+444 ['188', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+445 ['182', '132']
+found x
+found x
+found x
+found x
+found x
+found y
+446 ['187', '64']
+found y
+found x
+447 ['191', '27']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+448 ['182', '69']
+found x
+found x
+found y
+449 ['190', '78']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+450 ['191', '102']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+451 ['188', '105']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+452 ['188', '132']
+found x
+found x
+found x
+found y
+453 ['187', '63']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+454 ['191', '66']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+455 ['190', '60']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+456 ['182', '93']
+found x
+found x
+found y
+457 ['182', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+458 ['188', '2']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+459 ['187', '56']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+460 ['182', '177']
+found x
+found x
+found y
+461 ['180', '155']
+found y
+found x
+462 ['191', '132']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+463 ['187', '40']
+found x
+found x
+found x
+found x
+found y
+464 ['189', '187']
+found x
+found x
+found y
+465 ['190', '28']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+466 ['191', '65']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+467 ['188', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+468 ['189', '113']
+found y
+found x
+469 ['190', '144']
+found x
+found x
+found y
+470 ['190', '156']
+found x
+found x
+found x
+found y
+471 ['179', '105']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+472 ['190', '64']
+found x
+found x
+found x
+found y
+473 ['190', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+474 ['191', '141']
+found x
+found x
+found x
+found x
+found y
+475 ['186', '53']
+found x
+found x
+found y
+476 ['191', '52']
+found y
+found x
+477 ['184', '28']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+478 ['188', '4']
+found y
+found x
+479 ['182', '19']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+480 ['190', '175']
+found x
+found x
+found y
+481 ['189', '62']
+found x
+found x
+found x
+found y
+482 ['188', '28']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+483 ['191', '54']
+found y
+found x
+484 ['189', '150']
+found x
+found x
+found y
+485 ['185', '129']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+486 ['190', '187']
+found x
+found x
+found x
+found y
+487 ['186', '7']
+found y
+found x
+488 ['181', '46']
+found x
+found x
+found x
+found x
+found x
+489 ['187', '158']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+490 ['183', '157']
+found x
+found y
+491 ['187', '44']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+492 ['179', '80']
+found x
+found x
+found x
+found x
+found y
+493 ['187', '184']
+found y
+found y
+found y
+found y
+found x
+494 ['181', '169']
+found x
+found x
+found y
+495 ['190', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+496 ['186', '97']
+found x
+found y
+497 ['173', '146']
+found y
+found x
+498 ['191', '185']
+found y
+found x
+499 ['190', '98']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+500 ['190', '24']
+found x
+found x
+found y
+501 ['185', '16']
+found x
+found y
+502 ['188', '33']
+found y
+found x
+503 ['190', '41']
+found y
+found x
+504 ['189', '141']
+found x
+found x
+found x
+found y
+505 ['187', '38']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+506 ['184', '133']
+found x
+found x
+found x
+found x
+found y
+507 ['190', '169']
+found x
+found x
+found y
+508 ['191', '175']
+found y
+found y
+found x
+509 ['187', '124']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+510 ['184', '145']
+found x
+found x
+found x
+found x
+found y
+511 ['186', '143']
+found x
+found y
+512 ['190', '54']
+found x
+found x
+found y
+513 ['190', '135']
+found x
+found x
+found x
+found y
+514 ['190', '29']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+515 ['179', '77']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+516 ['185', '146']
+found y
+found x
+517 ['187', '135']
+found y
+found x
+518 ['191', '24']
+found y
+found y
+found x
+519 ['189', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+520 ['187', '117']
+found y
+found x
+521 ['191', '165']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+522 ['189', '65']
+found x
+found x
+found x
+found x
+found y
+523 ['190', '133']
+found x
+found x
+found x
+found y
+524 ['188', '79']
+found x
+found x
+found x
+found x
+found y
+525 ['188', '176']
+found x
+found y
+526 ['182', '7']
+found x
+found x
+found y
+527 ['178', '33']
+found y
+found x
+528 ['187', '122']
+found x
+found x
+found x
+found x
+found y
+529 ['189', '77']
+found x
+found x
+found x
+found x
+found x
+found y
+530 ['190', '26']
+found x
+found x
+found y
+531 ['187', '131']
+found y
+found x
+532 ['190', '128']
+found x
+found x
+found y
+533 ['187', '67']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+534 ['190', '69']
+found x
+found x
+found y
+535 ['190', '19']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+536 ['170', '79']
+found x
+found x
+found y
+537 ['189', '0']
+found y
+found x
+538 ['179', '78']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+539 ['185', '91']
+found x
+found y
+540 ['188', '174']
+found y
+found x
+541 ['170', '167']
+found x
+found x
+found y
+542 ['184', '104']
+found x
+found x
+found x
+found x
+found x
+found y
+543 ['189', '101']
+found y
+found x
+544 ['190', '4']
+found x
+found x
+found y
+545 ['190', '104']
+found x
+found x
+found x
+found x
+found x
+found y
+546 ['191', '0']
+found y
+found x
+547 ['191', '77']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+548 ['188', '102']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+549 ['188', '55']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+550 ['191', '145']
+found x
+found x
+found y
+551 ['189', '175']
+found x
+found x
+found y
+552 ['190', '161']
+found y
+found x
+553 ['186', '182']
+found y
+found y
+found x
+554 ['188', '161']
+found y
+found x
+555 ['187', '174']
+found y
+found x
+556 ['190', '94']
+found x
+found x
+found x
+found y
+557 ['179', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+558 ['191', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+559 ['188', '62']
+found x
+found x
+found y
+560 ['190', '7']
+found x
+found x
+found y
+561 ['180', '35']
+found y
+found x
+562 ['187', '5']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+563 ['188', '103']
+found x
+found x
+found x
+found x
+found y
+564 ['189', '24']
+found x
+found x
+found y
+565 ['191', '144']
+found y
+found x
+566 ['185', '86']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+567 ['191', '93']
+found x
+found x
+found x
+found x
+found y
+568 ['187', '137']
+found x
+found x
+found x
+found x
+found x
+found y
+569 ['187', '171']
+found y
+found x
+570 ['190', '103']
+found x
+found x
+found x
+found x
+found x
+found y
+571 ['177', '89']
+found y
+found x
+572 ['190', '138']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+573 ['184', '139']
+found x
+found x
+found x
+found x
+found y
+574 ['190', '132']
+found x
+found x
+found x
+found y
+575 ['190', '70']
+found x
+found x
+found x
+found y
+576 ['187', '14']
+found x
+found x
+found x
+found y
+577 ['188', '86']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+578 ['186', '67']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+579 ['181', '4']
+found x
+found x
+found y
+580 ['183', '37']
+found x
+found y
+581 ['191', '186']
+found y
+found x
+582 ['191', '96']
+found y
+found x
+583 ['190', '151']
+found x
+found x
+found x
+found x
+found y
+584 ['187', '6']
+found x
+found x
+found x
+found x
+found y
+585 ['187', '114']
+found y
+found x
+586 ['190', '172']
+found x
+found x
+found y
+587 ['186', '91']
+found x
+found y
+588 ['180', '116']
+found y
+found y
+found x
+589 ['191', '94']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+590 ['191', '31']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+591 ['191', '22']
+found y
+found x
+592 ['190', '177']
+found x
+found x
+found y
+593 ['187', '92']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+594 ['179', '1']
+found x
+found x
+found x
+found y
+595 ['177', '172']
+found y
+found x
+596 ['191', '146']
+found y
+found x
+597 ['189', '145']
+found x
+found x
+found y
+598 ['184', '177']
+found x
+found x
+found x
+found x
+found y
+599 ['191', '105']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+600 ['188', '39']
+found y
+found y
+found x
+601 ['191', '170']
+found y
+found x
+602 ['185', '19']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+603 ['185', '96']
+found y
+found x
+604 ['190', '71']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+605 ['183', '150']
+found x
+found y
+606 ['187', '49']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+607 ['191', '35']
+found y
+found x
+608 ['189', '144']
+found x
+found x
+found y
+609 ['184', '32']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+610 ['185', '170']
+found y
+found x
+611 ['191', '43']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+612 ['190', '65']
+found x
+found x
+found x
+found x
+found x
+found y
+613 ['187', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+614 ['186', '101']
+found y
+found x
+615 ['188', '80']
+found x
+found x
+found x
+found x
+found y
+616 ['184', '65']
+found x
+found x
+found x
+found x
+found x
+found y
+617 ['188', '98']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+618 ['190', '32']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+619 ['189', '147']
+found x
+found x
+found x
+found x
+found x
+found y
+620 ['189', '93']
+found x
+found x
+found x
+found y
+621 ['190', '166']
+found x
+found x
+found x
+found y
+622 ['186', '78']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+623 ['185', '122']
+found x
+found x
+found x
+found y
+624 ['191', '142']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+625 ['188', '37']
+found y
+found x
+626 ['189', '146']
+found y
+found x
+627 ['186', '26']
+found y
+found x
+628 ['188', '26']
+found y
+found x
+629 ['188', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+630 ['186', '49']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+631 ['191', '147']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+632 ['188', '31']
+found x
+found x
+found x
+found y
+633 ['183', '175']
+found y
+found x
+634 ['190', '178']
+found x
+found x
+found x
+found y
+635 ['190', '87']
+found x
+found x
+found x
+found x
+found x
+found y
+636 ['188', '87']
+found x
+found x
+found x
+found x
+found x
+found y
+637 ['187', '134']
+found y
+found x
+638 ['184', '158']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+639 ['186', '85']
+found y
+found y
+found x
+640 ['189', '94']
+found x
+found x
+found x
+found y
+641 ['189', '186']
+found x
+found x
+found y
+642 ['180', '168']
+found y
+found y
+found x
+643 ['180', '85']
+found y
+found y
+found x
+644 ['182', '150']
+found x
+found x
+found y
+645 ['188', '178']
+found y
+found x
+646 ['190', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+647 ['190', '158']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+648 ['189', '33']
+found x
+found x
+found y
+649 ['179', '15']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+650 ['188', '69']
+found y
+found x
+651 ['186', '30']
+found x
+found x
+found x
+found x
+found y
+652 ['191', '151']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+653 ['187', '155']
+found y
+found x
+654 ['189', '22']
+found x
+found x
+found y
+655 ['186', '123']
+found y
+found x
+656 ['189', '31']
+found x
+found x
+found x
+found y
+657 ['186', '98']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+658 ['188', '52']
+found y
+found x
+659 ['188', '109']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+660 ['190', '157']
+found x
+found x
+found x
+found y
+661 ['165', '114']
+found y
+found x
+662 ['187', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+663 ['191', '153']
+found y
+found x
+664 ['189', '142']
+found x
+found x
+found x
+found x
+found y
+665 ['186', '99']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+666 ['180', '179']
+found y
+found y
+found y
+found y
+found y
+found y
+found y
+found x
+667 ['191', '42']
+found y
+found x
+668 ['191', '33']
+found y
+found x
+669 ['191', '25']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+670 ['190', '81']
+found x
+found x
+found x
+found x
+found x
+found y
+671 ['188', '81']
+found x
+found x
+found x
+found x
+found y
+672 ['190', '186']
+found x
+found x
+found y
+673 ['191', '119']
+found x
+found x
+found x
+found x
+found y
+674 ['187', '60']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+675 ['191', '36']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+676 ['190', '18']
+found x
+found x
+found x
+found x
+found y
+677 ['190', '62']
+found x
+found x
+found x
+found y
+678 ['191', '59']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+679 ['191', '23']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+680 ['186', '50']
+found x
+found x
+found y
+681 ['188', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+682 ['191', '38']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+683 ['191', '182']
+found y
+found y
+found x
+684 ['191', '61']
+found y
+found x
+685 ['177', '159']
+found x
+found x
+found x
+found y
+686 ['186', '181']
+found y
+found y
+found x
+687 ['179', '91']
+found x
+found x
+found x
+found y
+688 ['191', '83']
+found y
+found x
+689 ['184', '18']
+found x
+found x
+found x
+found x
+found y
+690 ['185', '183']
+found y
+found x
+691 ['191', '159']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+692 ['189', '182']
+found y
+found x
+693 ['190', '124']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+694 ['189', '55']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+695 ['191', '174']
+found y
+found x
+696 ['189', '61']
+found x
+found x
+found y
+697 ['182', '80']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+698 ['189', '58']
+found x
+found x
+found x
+found x
+found y
+699 ['191', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+700 ['190', '165']
+found x
+found x
+found x
+found x
+found x
+found y
+701 ['188', '185']
+found y
+found x
+702 ['184', '165']
+found x
+found x
+found x
+found x
+found x
+found y
+703 ['190', '50']
+found x
+found x
+found x
+found y
+704 ['186', '122']
+found x
+found x
+found x
+found x
+found y
+705 ['189', '151']
+found x
+found x
+found x
+found y
+706 ['187', '1']
+found y
+found x
+707 ['190', '100']
+found x
+found x
+found y
+708 ['184', '100']
+found x
+found x
+found x
+found x
+found y
+709 ['190', '88']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+710 ['191', '163']
+found y
+found x
+711 ['186', '92']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+712 ['189', '117']
+found y
+found x
+713 ['191', '148']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+714 ['190', '109']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+715 ['185', '182']
+found y
+found y
+found x
+716 ['190', '162']
+found x
+found x
+found x
+found x
+found x
+found y
+717 ['189', '115']
+found y
+found x
+718 ['179', '3']
+found x
+found y
+719 ['189', '36']
+found x
+found x
+found x
+found x
+found x
+found y
+720 ['188', '113']
+found y
+found x
+721 ['169', '107']
+found x
+found x
+found y
+722 ['190', '91']
+found x
+found x
+found x
+found y
+723 ['184', '109']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+724 ['189', '153']
+found x
+found x
+found y
+725 ['190', '22']
+found x
+found x
+found y
+726 ['191', '117']
+found y
+found x
+727 ['185', '143']
+found x
+found y
+728 ['187', '133']
+found y
+found x
+729 ['180', '132']
+found y
+found x
+730 ['189', '42']
+found x
+found x
+found y
+731 ['191', '115']
+found y
+found x
+732 ['190', '79']
+found x
+found x
+found x
+found x
+found y
+733 ['183', '94']
+found x
+found x
+found y
+734 ['191', '179']
+found y
+found x
+735 ['184', '55']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+736 ['190', '55']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+737 ['174', '17']
+found y
+found x
+738 ['190', '37']
+found x
+found x
+found y
+739 ['189', '118']
+found x
+found x
+found x
+found x
+found x
+found y
+740 ['191', '56']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+741 ['189', '163']
+found x
+found x
+found y
+742 ['188', '53']
+found x
+found x
+found y
+743 ['184', '72']
+found x
+found x
+found x
+found x
+found x
+found y
+744 ['184', '37']
+found x
+found x
+found x
+found y
+745 ['176', '32']
+found x
+found y
+746 ['189', '59']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+747 ['191', '63']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+748 ['189', '80']
+found x
+found x
+found x
+found x
+found y
+749 ['190', '126']
+found x
+found x
+found x
+found y
+750 ['191', '97']
+found x
+found x
+found x
+found x
+found y
+751 ['189', '57']
+found x
+found x
+found y
+752 ['185', '160']
+found x
+found x
+found y
+753 ['190', '110']
+found x
+found x
+found y
+754 ['188', '74']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+755 ['188', '106']
+found x
+found x
+found x
+found x
+found x
+found y
+756 ['183', '57']
+found x
+found y
+757 ['190', '53']
+found x
+found x
+found x
+found y
+758 ['190', '42']
+found x
+found x
+found y
+759 ['188', '91']
+found x
+found y
+760 ['174', '167']
+found x
+found x
+found y
+761 ['189', '112']
+found x
+found x
+found x
+found y
+762 ['191', '120']
+found x
+found x
+found x
+found x
+found y
+763 ['184', '126']
+found x
+found x
+found x
+found x
+found y
+764 ['186', '33']
+found y
+found x
+765 ['190', '68']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+766 ['186', '116']
+found y
+found y
+found x
+767 ['190', '9']
+found x
+found y
+768 ['191', '112']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+769 ['174', '60']
+found x
+found x
+found y
+770 ['187', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+771 ['189', '97']
+found x
+found x
+found x
+found y
+772 ['189', '45']
+found y
+found x
+773 ['190', '167']
+found x
+found x
+found x
+found x
+found x
+found y
+774 ['190', '150']
+found x
+found x
+found y
+775 ['191', '44']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+776 ['188', '110']
+found y
+found x
+777 ['191', '160']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+778 ['185', '77']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+779 ['191', '89']
+found y
+found x
+780 ['188', '50']
+found x
+found x
+found y
+781 ['184', '9']
+found x
+found y
+782 ['189', '148']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+783 ['189', '89']
+found x
+found y
+784 ['188', '23']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+785 ['180', '93']
+found y
+found x
+786 ['190', '85']
+found x
+found y
+787 ['191', '140']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+788 ['188', '5']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+789 ['186', '111']
+found x
+found y
+790 ['191', '152']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+791 ['190', '106']
+found x
+found x
+found x
+found x
+found x
+found y
+792 ['188', '154']
+found x
+found x
+found y
+793 ['178', '1']
+found x
+found y
+794 ['191', '123']
+found y
+found x
+795 ['190', '52']
+found x
+found x
+found y
+796 ['178', '155']
+found y
+found x
+797 ['172', '87']
+found x
+found x
+found x
+found y
+798 ['191', '128']
+found y
+found x
+799 ['189', '123']
+found y
+found x
+800 ['189', '120']
+found x
+found x
+found y
+801 ['184', '106']
+found x
+found x
+found x
+found x
+found x
+found y
+802 ['181', '150']
+found x
+found y
+803 ['191', '190']
+found y
+found y
+found x
+804 ['189', '56']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+805 ['190', '116']
+found x
+found x
+found y
+806 ['166', '149']
+found x
+found y
+807 ['190', '189']
+found x
+found y
+808 ['188', '3']
+found y
+found x
+809 ['186', '174']
+found y
+found x
+810 ['189', '63']
+found x
+found x
+found x
+found x
+found y
+811 ['190', '80']
+found x
+found x
+found x
+found x
+found x
+found y
+812 ['190', '63']
+found x
+found x
+found x
+found x
+found x
+found y
+813 ['171', '97']
+found x
+found y
+814 ['190', '73']
+found x
+found x
+found x
+found x
+found x
+found y
+815 ['185', '47']
+found y
+found x
+816 ['191', '184']
+found y
+found y
+found y
+found y
+found x
+817 ['191', '188']
+found x
+found x
+found x
+found x
+found y
+818 ['183', '160']
+found x
+found y
+819 ['185', '57']
+found x
+found y
+820 ['191', '76']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+821 ['189', '184']
+found y
+found y
+found x
+822 ['172', '1']
+found x
+found x
+found y
+823 ['177', '139']
+found x
+found y
+824 ['189', '152']
+found x
+found x
+found x
+found y
+825 ['186', '75']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+826 ['188', '85']
+found y
+found y
+found x
+827 ['186', '155']
+found y
+found x
+828 ['189', '10']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+829 ['191', '169']
+found y
+found x
+830 ['183', '45']
+found y
+found y
+found x
+831 ['184', '183']
+found x
+found x
+found y
+832 ['191', '14']
+found x
+found x
+found x
+found x
+found y
+833 ['183', '2']
+found x
+found x
+found x
+found y
+834 ['191', '168']
+found x
+found x
+found y
+835 ['181', '56']
+found x
+found x
+found x
+found x
+found x
+found y
+836 ['151', '6']
+found x
+found y
+837 ['191', '125']
+found y
+found y
+found x
+838 ['184', '113']
+found y
+found x
+839 ['190', '34']
+found y
+found x
+840 ['189', '44']
+found x
+found x
+found x
+found x
+found x
+found y
+841 ['189', '140']
+found x
+found x
+found x
+found x
+found x
+found y
+842 ['189', '188']
+found x
+found x
+found y
+843 ['190', '185']
+found x
+found x
+found y
+844 ['189', '128']
+found x
+found x
+found y
+845 ['184', '34']
+found y
+found x
+846 ['185', '184']
+found y
+found y
+found y
+found y
+found x
+847 ['171', '55']
+found x
+found y
+848 ['191', '131']
+found y
+found x
+849 ['190', '44']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+850 ['162', '114']
+found y
+found x
+851 ['160', '148']
+found x
+found y
+852 ['191', '181']
+found y
+found y
+found x
+853 ['181', '44']
+found x
+found x
+found x
+found x
+found y
+854 ['183', '21']
+found x
+found x
+found y
+855 ['180', '90']
+found y
+found x
+856 ['190', '122']
+found x
+found x
+found x
+found x
+found y
+857 ['174', '22']
+found y
+found x
+858 ['189', '181']
+found x
+found x
+found y
+859 ['189', '168']
+found x
+found x
+found y
+860 ['186', '159']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+861 ['181', '116']
+found y
+found x
+862 ['181', '113']
+found y
+found x
+863 ['183', '80']
+found x
+found x
+found y
+864 ['183', '164']
+found x
+found x
+found x
+found x
+found y
+865 ['183', '59']
+found x
+found x
+found x
+found x
+found y
+866 ['180', '73']
+found y
+found x
+867 ['185', '181']
+found y
+found y
+found x
+868 ['180', '165']
+found y
+found x
+869 ['183', '120']
+found x
+found y
+870 ['191', '64']
+found x
+found x
+found x
+found x
+found y
+871 ['181', '136']
+found y
+found x
+872 ['183', '107']
+found x
+found x
+found x
+found y
+873 ['189', '169']
+found x
+found x
+found y
+874 ['186', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+875 ['183', '38']
+found x
+found x
+found x
+found x
+found y
+876 ['189', '13']
+found x
+found x
+found x
+found x
+found x
+found y
+877 ['185', '33']
+found y
+found x
+878 ['186', '21']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+879 ['189', '21']
+found x
+found x
+found x
+found x
+found x
+found y
+880 ['180', '150']
+found y
+found x
+881 ['191', '51']
+found y
+found x
+882 ['191', '130']
+found y
+found x
+883 ['180', '135']
+found y
+found x
+884 ['191', '40']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+885 ['185', '131']
+found y
+found x
+886 ['189', '51']
+found x
+found x
+found y
+887 ['188', '116']
+found y
+found y
+found x
+888 ['191', '158']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+889 ['189', '20']
+found x
+found x
+found x
+found y
+890 ['191', '20']
+found x
+found x
+found x
+found x
+found y
+891 ['189', '111']
+found x
+found x
+found y
+892 ['180', '10']
+found x
+found x
+found y
+893 ['191', '21']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+894 ['191', '111']
+found x
+found x
+found x
+found x
+found y
+895 ['191', '13']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+896 ['185', '51']
+found y
+found x
+897 ['165', '21']
+found x
+found y
+898 ['191', '32']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+899 ['185', '115']
+found y
+found x
+900 ['173', '79']
+found x
+found x
+found y
+901 ['188', '122']
+found x
+found x
+found x
+found y
+902 ['191', '134']
+found x
+found x
+found x
+found x
+found y
+903 ['185', '60']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+904 ['180', '29']
+found y
+found x
+905 ['191', '149']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+906 ['191', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+907 ['171', '80']
+found x
+found y
+908 ['191', '30']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+909 ['183', '1']
+found x
+found y
+910 ['189', '64']
+found x
+found x
+found y
+911 ['189', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+912 ['174', '42']
+found x
+found y
+913 ['191', '47']
+found y
+found x
+914 ['191', '41']
+found y
+found x
+915 ['137', '5']
+found x
+found y
+916 ['180', '113']
+found y
+found x
+917 ['189', '173']
+found x
+found x
+found x
+found y
+918 ['183', '10']
+found x
+found x
+found x
+found x
+found y
+919 ['183', '56']
+found x
+found x
+found x
+found x
+found y
+920 ['185', '174']
+found y
+found x
+921 ['178', '60']
+found x
+found x
+found x
+found x
+found x
+found y
+922 ['186', '13']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+923 ['189', '30']
+found x
+found x
+found x
+found y
+924 ['191', '173']
+found x
+found x
+found x
+found x
+found y
+925 ['159', '140']
+found y
+found x
+926 ['171', '38']
+found x
+found y
+927 ['183', '128']
+found x
+found y
+928 ['150', '134']
+found x
+found y
+929 ['149', '85']
+found y
+found y
+found x
+930 ['133', '38']
+found x
+found y
+931 ['173', '106']
+found x
+found x
+found y
+932 ['189', '19']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+933 ['173', '136']
+found y
+found y
+found x
+934 ['189', '47']
+found x
+found x
+found y
+935 ['185', '139']
+found x
+found y
+936 ['173', '150']
+found y
+found x
+937 ['191', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+938 ['190', '38']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+939 ['172', '91']
+found x
+found x
+found y
+940 ['191', '135']
+found x
+found x
+found x
+found x
+found y
+941 ['172', '110']
+found x
+found y
+942 ['189', '149']
+found x
+found x
+found x
+found y
+943 ['185', '14']
+found x
+found y
+944 ['162', '46']
+found x
+found x
+found y
+945 ['191', '67']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+946 ['183', '130']
+found x
+found y
+947 ['191', '1']
+found x
+found x
+found x
+found x
+found y
+948 ['185', '20']
+found x
+found y
+949 ['161', '71']
+found x
+found x
+found y
+950 ['183', '30']
+found x
+found x
+found y
+951 ['183', '169']
+found x
+found y
+952 ['191', '108']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+953 ['135', '50']
+found x
+found y
+954 ['183', '44']
+found x
+found x
+found y
+955 ['191', '121']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+956 ['190', '148']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+957 ['185', '159']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+958 ['134', '73']
+found x
+found y
+959 ['183', '155']
+found y
+found x
+960 ['185', '111']
+found x
+found y
+961 ['189', '155']
+found y
+found x
+962 ['191', '155']
+found y
+found x
+963 ['191', '92']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+964 ['184', '23']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+965 ['167', '60']
+found x
+found y
+966 ['185', '71']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+967 ['167', '1']
+found y
+found x
+968 ['191', '172']
+found y
+found x
+969 ['191', '95']
+found y
+found x
+970 ['185', '180']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+971 ['185', '108']
+found x
+found x
+found x
+found y
+972 ['189', '67']
+found x
+found x
+found x
+found x
+found x
+found y
+973 ['171', '169']
+found x
+found y
+974 ['155', '56']
+found x
+found y
+975 ['180', '158']
+found x
+found x
+found y
+976 ['189', '92']
+found x
+found x
+found x
+found x
+found y
+977 ['172', '154']
+found x
+found x
+found x
+found y
+978 ['180', '42']
+found y
+found y
+found x
+979 ['181', '23']
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+980 ['180', '31']
+found y
+found y
+found x
+981 ['190', '5']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+982 ['183', '64']
+found x
+found y
+983 ['174', '63']
+found x
+found x
+found y
+984 ['133', '113']
+found y
+found x
+985 ['191', '7']
+found y
+found x
+986 ['172', '9']
+found y
+found x
+987 ['171', '40']
+found x
+found y
+988 ['191', '143']
+found x
+found x
+found x
+found x
+found y
+989 ['139', '113']
+found y
+found x
+990 ['189', '137']
+found x
+found x
+found x
+found x
+found y
+991 ['171', '92']
+found x
+found y
+992 ['181', '5']
+found x
+found x
+found x
+found x
+found x
+found y
+993 ['169', '6']
+found x
+found x
+found y
+994 ['174', '56']
+found x
+found x
+found y
+995 ['172', '50']
+found x
+found x
+found x
+found y
+996 ['143', '50']
+found x
+found y
+997 ['159', '71']
+found x
+found y
+998 ['189', '121']
+found x
+found x
+found x
+found y
+999 ['173', '34']
+found y
+found x
+1000 ['171', '64']
+found x
+found y
+1001 ['164', '32']
+found y
+found x
+1002 ['191', '17']
+found y
+found x
+1003 ['191', '114']
+found y
+found x
+1004 ['158', '122']
+found y
+found x
+1005 ['155', '34']
+found y
+found x
+1006 ['185', '155']
+found y
+found x
+1007 ['186', '164']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1008 ['185', '173']
+found x
+found y
+1009 ['124', '49']
+found y
+found x
+1010 ['183', '19']
+found x
+found x
+found x
+found x
+found y
+1011 ['185', '95']
+found y
+found x
+1012 ['178', '139']
+found x
+found y
+1013 ['189', '172']
+found x
+found x
+found y
+1014 ['167', '133']
+found y
+found x
+1015 ['164', '2']
+found y
+found x
+1016 ['173', '44']
+found x
+found x
+found y
+1017 ['173', '58']
+found x
+found x
+found y
+1018 ['165', '164']
+found x
+found y
+1019 ['164', '140']
+found y
+found x
+1020 ['183', '67']
+found x
+found x
+found x
+found y
+1021 ['191', '49']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1022 ['171', '149']
+found x
+found y
+1023 ['107', '63']
+found y
+found x
+1024 ['191', '29']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1025 ['180', '80']
+found y
+found x
+1026 ['166', '133']
+found y
+found x
+1027 ['189', '143']
+found x
+found x
+found x
+found y
+1028 ['189', '7']
+found x
+found x
+found y
+1029 ['185', '21']
+found x
+found x
+found x
+found x
+found x
+found y
+1030 ['185', '107']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1031 ['180', '58']
+found y
+found x
+1032 ['158', '11']
+found y
+found x
+1033 ['135', '11']
+found x
+found y
+1034 ['189', '114']
+found x
+found x
+found y
+1037 ['185', '76']
+found x
+found x
+found x
+found y
+1038 ['159', '63']
+found y
+found x
+1039 ['173', '59']
+found x
+found x
+found y
+1040 ['178', '71']
+found x
+found x
+found x
+found x
+found x
+found y
+1041 ['139', '69']
+found y
+found x
+1042 ['158', '116']
+found y
+found y
+found x
+1043 ['162', '71']
+found x
+found x
+found y
+1044 ['135', '122']
+found x
+found y
+1045 ['171', '12']
+found y
+found x
+1046 ['171', '41']
+found y
+found x
+1047 ['154', '90']
+found x
+found y
+1049 ['191', '8']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+1050 ['189', '49']
+found x
+found x
+found x
+found x
+found y
+1051 ['180', '63']
+found y
+found x
+1052 ['183', '135']
+found x
+found y
+1053 ['149', '6']
+found x
+found y
+1054 ['159', '59']
+found x
+found y
+1055 ['111', '38']
+found x
+found y
+1056 ['139', '72']
+found x
+found y
+1057 ['164', '150']
+found y
+found x
+1058 ['171', '158']
+found x
+found y
+1059 ['148', '20']
+found y
+found x
+1060 ['174', '38']
+found x
+found x
+found y
+1061 ['189', '29']
+found x
+found x
+found x
+found x
+found x
+found y
+1062 ['180', '56']
+found x
+found x
+found y
+1063 ['164', '73']
+found y
+found x
+1064 ['191', '90']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1065 ['139', '75']
+found x
+found x
+found y
+1066 ['166', '139']
+found y
+found x
+1067 ['180', '59']
+found x
+found x
+found y
+1068 ['158', '6']
+found y
+found x
+1069 ['117', '5']
+found x
+found x
+found y
+1070 ['171', '135']
+found x
+found y
+1071 ['154', '60']
+found x
+found y
+1072 ['85', '8']
+found x
+found x
+found y
+1073 ['183', '121']
+found x
+found y
+1074 ['185', '1']
+found x
+found y
+1075 ['107', '59']
+found x
+found y
+1076 ['172', '122']
+found x
+found x
+found x
+found y
+1077 ['164', '55']
+found x
+found y
+1078 ['174', '23']
+found x
+found x
+found y
+1079 ['108', '23']
+found x
+found y
+1080 ['137', '6']
+found y
+found x
+1081 ['111', '23']
+found x
+found y
+1082 ['76', '63']
+found x
+found y
+1084 ['174', '148']
+found x
+found x
+found y
+1085 ['189', '8']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1086 ['183', '114']
+found y
+found x
+1087 ['116', '114']
+found y
+found x
+1088 ['136', '8']
+found x
+found x
+found y
+1089 ['183', '17']
+found y
+found x
+1090 ['191', '60']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1091 ['183', '172']
+found x
+found y
+1092 ['171', '121']
+found x
+found y
+1093 ['164', '52']
+found y
+found x
+1094 ['189', '90']
+found x
+found x
+found x
+found x
+found x
+found y
+1095 ['154', '46']
+found x
+found y
+1096 ['183', '143']
+found x
+found y
+1097 ['135', '6']
+found x
+found y
+1098 ['171', '17']
+found y
+found x
+1099 ['183', '49']
+found x
+found x
+found y
+1100 ['136', '90']
+found x
+found x
+found y
+1101 ['183', '7']
+found x
+found y
+1103 ['164', '113']
+found y
+found x
+1104 ['171', '49']
+found x
+found y
+1105 ['159', '38']
+found x
+found y
+1106 ['191', '46']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1108 ['116', '7']
+found x
+found x
+found y
+1109 ['155', '148']
+found x
+found y
+1110 ['164', '34']
+found y
+found y
+found x
+1111 ['75', '5']
+found y
+found x
+1112 ['172', '171']
+found y
+found x
+1113 ['148', '95']
+found y
+found y
+found x
+1115 ['174', '5']
+found x
+found x
+found y
+1116 ['121', '6']
+found x
+found y
+1117 ['180', '38']
+found x
+found x
+found y
+1118 ['124', '46']
+found x
+found y
+1119 ['189', '60']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1120 ['171', '7']
+found x
+found y
+1122 ['159', '23']
+found x
+found y
+1123 ['133', '50']
+found x
+found y
+1124 ['122', '29']
+found x
+found y
+1125 ['173', '148']
+found x
+found x
+found y
+1126 ['183', '29']
+found x
+found x
+found x
+found y
+1127 ['60', '11']
+found y
+found x
+1128 ['164', '31']
+found y
+found y
+found x
+1130 ['159', '148']
+found x
+found y
+1131 ['154', '133']
+found y
+found x
+1132 ['173', '23']
+found x
+found x
+found y
+1133 ['172', '6']
+found x
+found x
+found x
+found y
+1134 ['180', '23']
+found x
+found x
+found y
+1135 ['114', '6']
+found x
+found y
+1137 ['95', '5']
+found x
+found x
+found y
+1138 ['17', '6']
+found x
+found y
+1139 ['107', '38']
+found x
+found y
+1140 ['189', '46']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1141 ['143', '6']
+found x
+found y
+1142 ['139', '110']
+found y
+found x
+1143 ['180', '148']
+found x
+found x
+found y
+1144 ['136', '46']
+found x
+found x
+found y
+1145 ['139', '126']
+found y
+found x
+1146 ['183', '90']
+found x
+found x
+found y
+1147 ['191', '133']
+found x
+found x
+found x
+found x
+found y
+1148 ['49', '6']
+found y
+found x
+1150 ['173', '5']
+found x
+found x
+found y
+1151 ['134', '5']
+found x
+found y
+1153 ['171', '90']
+found x
+found y
+1155 ['164', '80']
+found y
+found x
+1157 ['139', '3']
+found y
+found x
+1158 ['91', '71']
+found x
+found x
+found y
+1159 ['171', '8']
+found x
+found y
+1162 ['159', '5']
+found y
+found x
+1163 ['133', '85']
+found y
+found y
+found x
+1164 ['139', '50']
+found x
+found y
+1165 ['23', '21']
+found y
+found x
+1166 ['74', '71']
+found x
+found y
+1167 ['154', '139']
+found y
+found x
+1168 ['183', '60']
+found x
+found x
+found x
+found x
+found y
+1170 ['110', '71']
+found x
+found y
+1172 ['29', '6']
+found y
+found x
+1173 ['171', '60']
+found x
+found y
+1175 ['180', '5']
+found x
+found y
+1177 ['191', '139']
+found x
+found x
+found x
+found x
+found y
+1178 ['189', '133']
+found x
+found x
+found y
+1179 ['139', '9']
+found y
+found x
+1182 ['164', '56']
+found x
+found y
+1184 ['136', '133']
+found x
+found x
+found y
+1186 ['107', '5']
+found y
+found x
+1188 ['139', '124']
+found x
+found y
+1190 ['76', '23']
+found x
+found y
+1192 ['133', '11']
+found x
+found y
+1194 ['154', '71']
+found x
+found y
+1195 ['90', '6']
+found y
+found x
+1198 ['139', '85']
+found y
+found y
+found x
+1199 ['183', '46']
+found x
+found x
+found x
+found x
+found y
+1201 ['148', '1']
+found y
+found y
+found x
+1205 ['191', '71']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1206 ['164', '44']
+found y
+found x
+1207 ['164', '59']
+found x
+found y
+1209 ['171', '46']
+found x
+found y
+1211 ['189', '139']
+found x
+found x
+found y
+1213 ['124', '71']
+found x
+found y
+1215 ['139', '136']
+found y
+found y
+found x
+1218 ['60', '6']
+found y
+found x
+1224 ['76', '5']
+found x
+found y
+1225 ['85', '71']
+found x
+found x
+found y
+1228 ['5', '1']
+found y
+found x
+1230 ['183', '133']
+found x
+found y
+1231 ['133', '116']
+found y
+found y
+found x
+1234 ['13', '5']
+found x
+found y
+1236 ['139', '11']
+found x
+found y
+1237 ['171', '133']
+found x
+found y
+1239 ['189', '71']
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found x
+found y
+1243 ['136', '71']
+found x
+found x
+found y
+1246 ['46', '6']
+found y
+found x
+1261 ['71', '11']
+found y
+found x
+1267 ['164', '38']
+found x
+found y
+1270 ['183', '139']
+found x
+found y
+1272 ['139', '116']
+found y
+found y
+found x
+1273 ['139', '122']
+found x
+found y
+1280 ['171', '139']
+found x
+found y
+1288 ['164', '23']
+found x
+found y
+1289 ['164', '148']
+found x
+found y
+1296 ['183', '71']
+found x
+found x
+found x
+found x
+found y
+1298 ['116', '71']
+found x
+found x
+found y
+1300 ['122', '71']
+found x
+found y
+1305 ['171', '71']
+found x
+found y
+1318 ['164', '5']
+found y
+found x
+1344 ['71', '6']
+found y
+found x
+found shorter tour
+started at 0 . Distance= 39718
+Points visited in order:  ['0', '101', '182', '83', '61', '170', '96', '119', '160', '89', '190', '184', '123', '125', '131', '111', '181', '51', '20', '30', '67', '46', '108', '97', '188', '130', '47', '168', '179', '45', '163', '120', '172', '7', '135', '143', '140', '16', '104', '144', '24', '175', '54', '187', '141', '70', '132', '65', '103', '162', '178', '48', '161', '127', '156', '91', '189', '136', '191', '110', '126', '3', '167', '154', '53', '122', '18', '72', '81', '106', '87', '138', '74', '124', '15', '28', '129', '43', '59', '23', '148', '8', '85', '9', '6', '11', '99', '82', '78', '10', '166', '50', '183', '116', '171', '26', '39', '69', '176', '98', '142', '88', '37', '150', '86', '68', '66', '180', '107', '2', '27', '56', '158', '38', '145', '186', '100', '22', '93', '94', '165', '151', '79', '31', '185', '52', '34', '113', '58', '73', '42', '153', '109', '80', '62', '177', '4', '157', '63', '44', '36', '5', '41', '12', '29', '1', '134', '152', '40', '137', '149', '121', '114', '17', '49', '64', '169', '128', '146', '35', '90', '118', '32', '139', '133', '71', '55', '57', '112', '14', '173', '95', '155', '92', '117', '115', '21', '147', '105', '33', '174', '76', '13', '164', '159', '102', '60', '25', '77', '75', '19', '0']
+Writing output file...
+Output written to: test-input-4.txt.tour
+{0: ['191', '191'], 3: ['41', '12'], 7: ['113', '34'], 8: ['155', '95'], 9: ['117', '115'], 12: ['161', '127'], 13: ['182', '83'], 14: ['131', '125'], 16: ['101', '0'], 17: ['146', '35'], 18: ['190', '184'], 19: ['85', '9'], 20: ['170', '96'], 21: ['179', '45'], 22: ['184', '123'], 23: ['189', '136'], 24: ['190', '89'], 25: ['189', '85'], 26: ['175', '24'], 27: ['182', '61'], 28: ['114', '17'], 29: ['171', '116'], 30: ['181', '51'], 31: ['163', '45'], 32: ['39', '26'], 33: ['179', '163'], 34: ['183', '116'], 35: ['184', '125'], 36: ['175', '54'], 37: ['190', '125'], 38: ['184', '131'], 39: ['150', '37'], 40: ['184', '181'], 41: ['189', '9'], 42: ['100', '22'], 43: ['130', '47'], 44: ['131', '51'], 45: ['174', '33'], 46: ['190', '131'], 47: ['172', '7'], 48: ['185', '52'], 49: ['169', '128'], 50: ['153', '42'], 51: ['144', '24'], 52: ['186', '100'], 53: ['186', '22'], 54: ['191', '110'], 55: ['191', '136'], 56: ['69', '39'], 57: ['190', '181'], 58: ['175', '145'], 59: ['181', '123'], 60: ['177', '4'], 61: ['168', '130'], 62: ['183', '171'], 63: ['190', '57'], 64: ['191', '126'], 65: ['184', '51'], 66: ['189', '126'], 67: ['191', '3'], 68: ['169', '64'], 69: ['178', '48'], 70: ['191', '189'], 71: ['179', '120'], 72: ['189', '110'], 73: ['188', '130'], 74: ['172', '135'], 75: ['139', '133'], 76: ['176', '39'], 77: ['177', '157'], 78: ['179', '16'], 79: ['181', '89'], 80: ['134', '1'], 81: ['190', '51'], 82: ['187', '54'], 83: ['125', '111'], 84: ['191', '85'], 85: ['189', '91'], 86: ['191', '9'], 87: ['173', '95'], 88: ['188', '97'], 89: ['156', '127'], 90: ['187', '175'], 91: ['187', '141'], 92: ['178', '161'], 93: ['170', '61'], 94: ['187', '70'], 95: ['172', '143'], 96: ['173', '14'], 97: ['186', '93'], 98: ['191', '91'], 99: ['181', '20'], 100: ['166', '50'], 101: ['185', '34'], 102: ['182', '119'], 103: ['185', '113'], 104: ['177', '62'], 105: ['190', '20'], 106: ['191', '154'], 107: ['191', '53'], 108: ['182', '160'], 109: ['149', '121'], 110: ['188', '152'], 111: ['182', '89'], 112: ['184', '160'], 113: ['183', '50'], 114: ['188', '47'], 115: ['181', '111'], 116: ['187', '132'], 117: ['190', '111'], 118: ['186', '94'], 119: ['190', '160'], 120: ['181', '57'], 121: ['185', '31'], 122: ['190', '112'], 123: ['178', '91'], 124: ['186', '151'], 125: ['191', '122'], 126: ['174', '76'], 127: ['188', '40'], 128: ['191', '18'], 129: ['181', '30'], 130: ['178', '166'], 131: ['186', '79'], 132: ['190', '182'], 133: ['190', '83'], 134: ['182', '25'], 135: ['186', '31'], 136: ['179', '168'], 137: ['189', '3'], 138: ['184', '108'], 139: ['191', '72'], 140: ['189', '6'], 141: ['190', '119'], 142: ['190', '14'], 143: ['185', '58'], 144: ['178', '162'], 145: ['190', '61'], 146: ['191', '81'], 147: ['183', '136'], 148: ['144', '104'], 149: ['190', '108'], 150: ['179', '40'], 151: ['184', '61'], 152: ['186', '80'], 153: ['184', '14'], 154: ['187', '65'], 155: ['162', '103'], 156: ['189', '50'], 157: ['188', '137'], 158: ['191', '106'], 159: ['189', '116'], 160: ['184', '30'], 161: ['184', '155'], 162: ['186', '62'], 163: ['190', '25'], 164: ['178', '156'], 165: ['165', '94'], 166: ['186', '145'], 167: ['184', '95'], 168: ['190', '155'], 169: ['190', '173'], 170: ['183', '126'], 171: ['184', '173'], 172: ['189', '53'], 173: ['191', '178'], 174: ['190', '95'], 175: ['167', '3'], 176: ['187', '157'], 177: ['186', '58'], 178: ['190', '30'], 179: ['168', '120'], 180: ['185', '73'], 181: ['191', '87'], 182: ['187', '103'], 183: ['186', '104'], 184: ['187', '161'], 185: ['189', '81'], 186: ['173', '123'], 187: ['189', '171'], 188: ['186', '63'], 189: ['188', '149'], 190: ['184', '97'], 191: ['186', '54'], 192: ['189', '166'], 193: ['191', '162'], 194: ['187', '93'], 195: ['191', '48'], 196: ['190', '97'], 197: ['189', '48'], 198: ['191', '183'], 199: ['189', '178'], 200: ['187', '142'], 201: ['190', '92'], 202: ['188', '114'], 203: ['187', '94'], 204: ['188', '16'], 205: ['183', '166'], 206: ['166', '116'], 207: ['191', '50'], 208: ['191', '6'], 209: ['190', '117'], 210: ['186', '175'], 211: ['188', '49'], 212: ['191', '166'], 213: ['179', '104'], 214: ['179', '41'], 215: ['190', '115'], 216: ['189', '87'], 217: ['188', '64'], 218: ['189', '11'], 219: ['179', '170'], 220: ['182', '0'], 221: ['184', '47'], 222: ['175', '165'], 223: ['187', '88'], 224: ['188', '146'], 225: ['186', '44'], 226: ['188', '182'], 227: ['190', '21'], 228: ['191', '116'], 229: ['185', '42'], 230: ['186', '36'], 231: ['172', '120'], 232: ['184', '115'], 233: ['184', '130'], 234: ['191', '167'], 235: ['182', '20'], 236: ['190', '170'], 237: ['190', '47'], 238: ['191', '138'], 239: ['191', '74'], 240: ['188', '123'], 241: ['181', '168'], 242: ['167', '52'], 243: ['185', '157'], 244: ['172', '140'], 245: ['188', '184'], 246: ['190', '147'], 247: ['190', '130'], 248: ['190', '96'], 249: ['187', '87'], 250: ['187', '170'], 251: ['179', '83'], 252: ['184', '168'], 253: ['191', '103'], 254: ['187', '37'], 255: ['189', '162'], 256: ['191', '171'], 257: ['187', '36'], 258: ['188', '169'], 259: ['188', '135'], 260: ['188', '90'], 261: ['186', '70'], 262: ['189', '138'], 263: ['191', '161'], 264: ['190', '168'], 265: ['183', '3'], 266: ['188', '118'], 267: ['187', '186'], 268: ['182', '47'], 269: ['187', '151'], 270: ['190', '105'], 271: ['188', '36'], 272: ['188', '131'], 273: ['191', '127'], 274: ['187', '100'], 275: ['177', '151'], 276: ['186', '113'], 277: ['188', '125'], 278: ['185', '109'], 279: ['187', '86'], 280: ['190', '101'], 281: ['191', '11'], 282: ['187', '68'], 283: ['182', '77'], 284: ['179', '93'], 285: ['190', '33'], 286: ['177', '146'], 287: ['183', '26'], 288: ['190', '13'], 289: ['189', '86'], 290: ['190', '137'], 291: ['188', '128'], 292: ['190', '0'], 293: ['191', '86'], 294: ['191', '124'], 295: ['181', '67'], 296: ['182', '152'], 297: ['188', '121'], 298: ['179', '29'], 299: ['184', '13'], 300: ['182', '155'], 301: ['189', '127'], 302: ['191', '68'], 303: ['189', '167'], 304: ['179', '140'], 305: ['189', '26'], 306: ['185', '70'], 307: ['188', '7'], 308: ['189', '99'], 309: ['187', '66'], 310: ['180', '66'], 311: ['182', '142'], 312: ['186', '5'], 313: ['190', '35'], 314: ['190', '174'], 315: ['184', '45'], 316: ['184', '163'], 317: ['181', '45'], 318: ['180', '107'], 319: ['184', '67'], 320: ['191', '73'], 321: ['190', '163'], 322: ['187', '2'], 323: ['191', '157'], 324: ['185', '162'], 325: ['187', '27'], 326: ['183', '98'], 327: ['181', '105'], 328: ['182', '137'], 329: ['190', '146'], 330: ['191', '26'], 331: ['189', '69'], 332: ['187', '18'], 333: ['181', '35'], 334: ['191', '156'], 335: ['189', '39'], 336: ['184', '179'], 337: ['187', '53'], 338: ['191', '15'], 339: ['190', '77'], 340: ['191', '99'], 341: ['190', '179'], 342: ['187', '61'], 343: ['188', '141'], 344: ['191', '28'], 345: ['185', '145'], 346: ['169', '54'], 347: ['189', '156'], 348: ['184', '152'], 349: ['182', '144'], 350: ['182', '40'], 351: ['176', '146'], 352: ['188', '111'], 353: ['191', '70'], 354: ['187', '34'], 355: ['189', '98'], 356: ['191', '39'], 357: ['187', '166'], 358: ['188', '145'], 359: ['188', '175'], 360: ['186', '35'], 361: ['189', '28'], 362: ['183', '103'], 363: ['191', '69'], 364: ['187', '97'], 365: ['188', '32'], 366: ['191', '4'], 367: ['190', '66'], 368: ['187', '0'], 369: ['189', '68'], 370: ['191', '88'], 371: ['187', '185'], 372: ['182', '36'], 373: ['186', '179'], 374: ['187', '42'], 375: ['189', '176'], 376: ['174', '15'], 377: ['191', '177'], 378: ['191', '129'], 379: ['190', '40'], 380: ['189', '82'], 381: ['191', '98'], 382: ['190', '27'], 383: ['191', '176'], 384: ['190', '164'], 385: ['189', '78'], 386: ['188', '151'], 387: ['182', '145'], 388: ['177', '66'], 389: ['186', '162'], 390: ['189', '73'], 391: ['182', '76'], 392: ['188', '139'], 393: ['190', '159'], 394: ['188', '54'], 395: ['184', '164'], 396: ['191', '37'], 397: ['188', '14'], 398: ['191', '113'], 399: ['189', '129'], 400: ['190', '49'], 401: ['185', '104'], 402: ['189', '70'], 403: ['191', '78'], 404: ['187', '140'], 405: ['188', '173'], 406: ['186', '129'], 407: ['190', '16'], 408: ['182', '180'], 409: ['190', '120'], 410: ['190', '114'], 411: ['189', '4'], 412: ['188', '187'], 413: ['188', '140'], 414: ['187', '160'], 415: ['188', '71'], 416: ['190', '102'], 417: ['191', '150'], 418: ['187', '58'], 419: ['182', '114'], 420: ['191', '62'], 421: ['184', '180'], 422: ['190', '142'], 423: ['187', '105'], 424: ['191', '187'], 425: ['177', '85'], 426: ['185', '140'], 427: ['183', '167'], 428: ['187', '168'], 429: ['179', '101'], 430: ['190', '17'], 431: ['189', '102'], 432: ['184', '102'], 433: ['182', '17'], 434: ['190', '82'], 435: ['180', '82'], 436: ['187', '9'], 437: ['190', '176'], 438: ['190', '129'], 439: ['182', '169'], 440: ['182', '94'], 441: ['188', '147'], 442: ['176', '97'], 443: ['190', '149'], 444: ['188', '129'], 445: ['182', '132'], 446: ['187', '64'], 447: ['191', '27'], 448: ['182', '69'], 449: ['190', '78'], 450: ['191', '102'], 451: ['188', '105'], 452: ['188', '132'], 453: ['187', '63'], 454: ['191', '66'], 455: ['190', '60'], 456: ['182', '93'], 457: ['182', '75'], 458: ['188', '2'], 459: ['187', '56'], 460: ['182', '177'], 461: ['180', '155'], 462: ['191', '132'], 463: ['187', '40'], 464: ['189', '187'], 465: ['190', '28'], 466: ['191', '65'], 467: ['188', '107'], 468: ['189', '113'], 469: ['190', '144'], 470: ['190', '156'], 471: ['179', '105'], 472: ['190', '64'], 473: ['190', '36'], 474: ['191', '141'], 475: ['186', '53'], 476: ['191', '52'], 477: ['184', '28'], 478: ['188', '4'], 479: ['182', '19'], 480: ['190', '175'], 481: ['189', '62'], 482: ['188', '28'], 483: ['191', '54'], 484: ['189', '150'], 485: ['185', '129'], 486: ['190', '187'], 487: ['186', '7'], 488: ['181', '46'], 489: ['187', '158'], 490: ['183', '157'], 491: ['187', '44'], 492: ['179', '80'], 493: ['187', '184'], 494: ['181', '169'], 495: ['190', '75'], 496: ['186', '97'], 497: ['173', '146'], 498: ['191', '185'], 499: ['190', '98'], 500: ['190', '24'], 501: ['185', '16'], 502: ['188', '33'], 503: ['190', '41'], 504: ['189', '141'], 505: ['187', '38'], 506: ['184', '133'], 507: ['190', '169'], 508: ['191', '175'], 509: ['187', '124'], 510: ['184', '145'], 511: ['186', '143'], 512: ['190', '54'], 513: ['190', '135'], 514: ['190', '29'], 515: ['179', '77'], 516: ['185', '146'], 517: ['187', '135'], 518: ['191', '24'], 519: ['189', '75'], 520: ['187', '117'], 521: ['191', '165'], 522: ['189', '65'], 523: ['190', '133'], 524: ['188', '79'], 525: ['188', '176'], 526: ['182', '7'], 527: ['178', '33'], 528: ['187', '122'], 529: ['189', '77'], 530: ['190', '26'], 531: ['187', '131'], 532: ['190', '128'], 533: ['187', '67'], 534: ['190', '69'], 535: ['190', '19'], 536: ['170', '79'], 537: ['189', '0'], 538: ['179', '78'], 539: ['185', '91'], 540: ['188', '174'], 541: ['170', '167'], 542: ['184', '104'], 543: ['189', '101'], 544: ['190', '4'], 545: ['190', '104'], 546: ['191', '0'], 547: ['191', '77'], 548: ['188', '102'], 549: ['188', '55'], 550: ['191', '145'], 551: ['189', '175'], 552: ['190', '161'], 553: ['186', '182'], 554: ['188', '161'], 555: ['187', '174'], 556: ['190', '94'], 557: ['179', '107'], 558: ['191', '75'], 559: ['188', '62'], 560: ['190', '7'], 561: ['180', '35'], 562: ['187', '5'], 563: ['188', '103'], 564: ['189', '24'], 565: ['191', '144'], 566: ['185', '86'], 567: ['191', '93'], 568: ['187', '137'], 569: ['187', '171'], 570: ['190', '103'], 571: ['177', '89'], 572: ['190', '138'], 573: ['184', '139'], 574: ['190', '132'], 575: ['190', '70'], 576: ['187', '14'], 577: ['188', '86'], 578: ['186', '67'], 579: ['181', '4'], 580: ['183', '37'], 581: ['191', '186'], 582: ['191', '96'], 583: ['190', '151'], 584: ['187', '6'], 585: ['187', '114'], 586: ['190', '172'], 587: ['186', '91'], 588: ['180', '116'], 589: ['191', '94'], 590: ['191', '31'], 591: ['191', '22'], 592: ['190', '177'], 593: ['187', '92'], 594: ['179', '1'], 595: ['177', '172'], 596: ['191', '146'], 597: ['189', '145'], 598: ['184', '177'], 599: ['191', '105'], 600: ['188', '39'], 601: ['191', '170'], 602: ['185', '19'], 603: ['185', '96'], 604: ['190', '71'], 605: ['183', '150'], 606: ['187', '49'], 607: ['191', '35'], 608: ['189', '144'], 609: ['184', '32'], 610: ['185', '170'], 611: ['191', '43'], 612: ['190', '65'], 613: ['187', '180'], 614: ['186', '101'], 615: ['188', '80'], 616: ['184', '65'], 617: ['188', '98'], 618: ['190', '32'], 619: ['189', '147'], 620: ['189', '93'], 621: ['190', '166'], 622: ['186', '78'], 623: ['185', '122'], 624: ['191', '142'], 625: ['188', '37'], 626: ['189', '146'], 627: ['186', '26'], 628: ['188', '26'], 629: ['188', '180'], 630: ['186', '49'], 631: ['191', '147'], 632: ['188', '31'], 633: ['183', '175'], 634: ['190', '178'], 635: ['190', '87'], 636: ['188', '87'], 637: ['187', '134'], 638: ['184', '158'], 639: ['186', '85'], 640: ['189', '94'], 641: ['189', '186'], 642: ['180', '168'], 643: ['180', '85'], 644: ['182', '150'], 645: ['188', '178'], 646: ['190', '140'], 647: ['190', '158'], 648: ['189', '33'], 649: ['179', '15'], 650: ['188', '69'], 651: ['186', '30'], 652: ['191', '151'], 653: ['187', '155'], 654: ['189', '22'], 655: ['186', '123'], 656: ['189', '31'], 657: ['186', '98'], 658: ['188', '52'], 659: ['188', '109'], 660: ['190', '157'], 661: ['165', '114'], 662: ['187', '107'], 663: ['191', '153'], 664: ['189', '142'], 665: ['186', '99'], 666: ['180', '179'], 667: ['191', '42'], 668: ['191', '33'], 669: ['191', '25'], 670: ['190', '81'], 671: ['188', '81'], 672: ['190', '186'], 673: ['191', '119'], 674: ['187', '60'], 675: ['191', '36'], 676: ['190', '18'], 677: ['190', '62'], 678: ['191', '59'], 679: ['191', '23'], 680: ['186', '50'], 681: ['188', '75'], 682: ['191', '38'], 683: ['191', '182'], 684: ['191', '61'], 685: ['177', '159'], 686: ['186', '181'], 687: ['179', '91'], 688: ['191', '83'], 689: ['184', '18'], 690: ['185', '183'], 691: ['191', '159'], 692: ['189', '182'], 693: ['190', '124'], 694: ['189', '55'], 695: ['191', '174'], 696: ['189', '61'], 697: ['182', '80'], 698: ['189', '58'], 699: ['191', '180'], 700: ['190', '165'], 701: ['188', '185'], 702: ['184', '165'], 703: ['190', '50'], 704: ['186', '122'], 705: ['189', '151'], 706: ['187', '1'], 707: ['190', '100'], 708: ['184', '100'], 709: ['190', '88'], 710: ['191', '163'], 711: ['186', '92'], 712: ['189', '117'], 713: ['191', '148'], 714: ['190', '109'], 715: ['185', '182'], 716: ['190', '162'], 717: ['189', '115'], 718: ['179', '3'], 719: ['189', '36'], 720: ['188', '113'], 721: ['169', '107'], 722: ['190', '91'], 723: ['184', '109'], 724: ['189', '153'], 725: ['190', '22'], 726: ['191', '117'], 727: ['185', '143'], 728: ['187', '133'], 729: ['180', '132'], 730: ['189', '42'], 731: ['191', '115'], 732: ['190', '79'], 733: ['183', '94'], 734: ['191', '179'], 735: ['184', '55'], 736: ['190', '55'], 737: ['174', '17'], 738: ['190', '37'], 739: ['189', '118'], 740: ['191', '56'], 741: ['189', '163'], 742: ['188', '53'], 743: ['184', '72'], 744: ['184', '37'], 745: ['176', '32'], 746: ['189', '59'], 747: ['191', '63'], 748: ['189', '80'], 749: ['190', '126'], 750: ['191', '97'], 751: ['189', '57'], 752: ['185', '160'], 753: ['190', '110'], 754: ['188', '74'], 755: ['188', '106'], 756: ['183', '57'], 757: ['190', '53'], 758: ['190', '42'], 759: ['188', '91'], 760: ['174', '167'], 761: ['189', '112'], 762: ['191', '120'], 763: ['184', '126'], 764: ['186', '33'], 765: ['190', '68'], 766: ['186', '116'], 767: ['190', '9'], 768: ['191', '112'], 769: ['174', '60'], 770: ['187', '164'], 771: ['189', '97'], 772: ['189', '45'], 773: ['190', '167'], 774: ['190', '150'], 775: ['191', '44'], 776: ['188', '110'], 777: ['191', '160'], 778: ['185', '77'], 779: ['191', '89'], 780: ['188', '50'], 781: ['184', '9'], 782: ['189', '148'], 783: ['189', '89'], 784: ['188', '23'], 785: ['180', '93'], 786: ['190', '85'], 787: ['191', '140'], 788: ['188', '5'], 789: ['186', '111'], 790: ['191', '152'], 791: ['190', '106'], 792: ['188', '154'], 793: ['178', '1'], 794: ['191', '123'], 795: ['190', '52'], 796: ['178', '155'], 797: ['172', '87'], 798: ['191', '128'], 799: ['189', '123'], 800: ['189', '120'], 801: ['184', '106'], 802: ['181', '150'], 803: ['191', '190'], 804: ['189', '56'], 805: ['190', '116'], 806: ['166', '149'], 807: ['190', '189'], 808: ['188', '3'], 809: ['186', '174'], 810: ['189', '63'], 811: ['190', '80'], 812: ['190', '63'], 813: ['171', '97'], 814: ['190', '73'], 815: ['185', '47'], 816: ['191', '184'], 817: ['191', '188'], 818: ['183', '160'], 819: ['185', '57'], 820: ['191', '76'], 821: ['189', '184'], 822: ['172', '1'], 823: ['177', '139'], 824: ['189', '152'], 825: ['186', '75'], 826: ['188', '85'], 827: ['186', '155'], 828: ['189', '10'], 829: ['191', '169'], 830: ['183', '45'], 831: ['184', '183'], 832: ['191', '14'], 833: ['183', '2'], 834: ['191', '168'], 835: ['181', '56'], 836: ['151', '6'], 837: ['191', '125'], 838: ['184', '113'], 839: ['190', '34'], 840: ['189', '44'], 841: ['189', '140'], 842: ['189', '188'], 843: ['190', '185'], 844: ['189', '128'], 845: ['184', '34'], 846: ['185', '184'], 847: ['171', '55'], 848: ['191', '131'], 849: ['190', '44'], 850: ['162', '114'], 851: ['160', '148'], 852: ['191', '181'], 853: ['181', '44'], 854: ['183', '21'], 855: ['180', '90'], 856: ['190', '122'], 857: ['174', '22'], 858: ['189', '181'], 859: ['189', '168'], 860: ['186', '159'], 861: ['181', '116'], 862: ['181', '113'], 863: ['183', '80'], 864: ['183', '164'], 865: ['183', '59'], 866: ['180', '73'], 867: ['185', '181'], 868: ['180', '165'], 869: ['183', '120'], 870: ['191', '64'], 871: ['181', '136'], 872: ['183', '107'], 873: ['189', '169'], 874: ['186', '107'], 875: ['183', '38'], 876: ['189', '13'], 877: ['185', '33'], 878: ['186', '21'], 879: ['189', '21'], 880: ['180', '150'], 881: ['191', '51'], 882: ['191', '130'], 883: ['180', '135'], 884: ['191', '40'], 885: ['185', '131'], 886: ['189', '51'], 887: ['188', '116'], 888: ['191', '158'], 889: ['189', '20'], 890: ['191', '20'], 891: ['189', '111'], 892: ['180', '10'], 893: ['191', '21'], 894: ['191', '111'], 895: ['191', '13'], 896: ['185', '51'], 897: ['165', '21'], 898: ['191', '32'], 899: ['185', '115'], 900: ['173', '79'], 901: ['188', '122'], 902: ['191', '134'], 903: ['185', '60'], 904: ['180', '29'], 905: ['191', '149'], 906: ['191', '107'], 907: ['171', '80'], 908: ['191', '30'], 909: ['183', '1'], 910: ['189', '64'], 911: ['189', '164'], 912: ['174', '42'], 913: ['191', '47'], 914: ['191', '41'], 915: ['137', '5'], 916: ['180', '113'], 917: ['189', '173'], 918: ['183', '10'], 919: ['183', '56'], 920: ['185', '174'], 921: ['178', '60'], 922: ['186', '13'], 923: ['189', '30'], 924: ['191', '173'], 925: ['159', '140'], 926: ['171', '38'], 927: ['183', '128'], 928: ['150', '134'], 929: ['149', '85'], 930: ['133', '38'], 931: ['173', '106'], 932: ['189', '19'], 933: ['173', '136'], 934: ['189', '47'], 935: ['185', '139'], 936: ['173', '150'], 937: ['191', '164'], 938: ['190', '38'], 939: ['172', '91'], 940: ['191', '135'], 941: ['172', '110'], 942: ['189', '149'], 943: ['185', '14'], 944: ['162', '46'], 945: ['191', '67'], 946: ['183', '130'], 947: ['191', '1'], 948: ['185', '20'], 949: ['161', '71'], 950: ['183', '30'], 951: ['183', '169'], 952: ['191', '108'], 953: ['135', '50'], 954: ['183', '44'], 955: ['191', '121'], 956: ['190', '148'], 957: ['185', '159'], 958: ['134', '73'], 959: ['183', '155'], 960: ['185', '111'], 961: ['189', '155'], 962: ['191', '155'], 963: ['191', '92'], 964: ['184', '23'], 965: ['167', '60'], 966: ['185', '71'], 967: ['167', '1'], 968: ['191', '172'], 969: ['191', '95'], 970: ['185', '180'], 971: ['185', '108'], 972: ['189', '67'], 973: ['171', '169'], 974: ['155', '56'], 975: ['180', '158'], 976: ['189', '92'], 977: ['172', '154'], 978: ['180', '42'], 979: ['181', '23'], 980: ['180', '31'], 981: ['190', '5'], 982: ['183', '64'], 983: ['174', '63'], 984: ['133', '113'], 985: ['191', '7'], 986: ['172', '9'], 987: ['171', '40'], 988: ['191', '143'], 989: ['139', '113'], 990: ['189', '137'], 991: ['171', '92'], 992: ['181', '5'], 993: ['169', '6'], 994: ['174', '56'], 995: ['172', '50'], 996: ['143', '50'], 997: ['159', '71'], 998: ['189', '121'], 999: ['173', '34'], 1000: ['171', '64'], 1001: ['164', '32'], 1002: ['191', '17'], 1003: ['191', '114'], 1004: ['158', '122'], 1005: ['155', '34'], 1006: ['185', '155'], 1007: ['186', '164'], 1008: ['185', '173'], 1009: ['124', '49'], 1010: ['183', '19'], 1011: ['185', '95'], 1012: ['178', '139'], 1013: ['189', '172'], 1014: ['167', '133'], 1015: ['164', '2'], 1016: ['173', '44'], 1017: ['173', '58'], 1018: ['165', '164'], 1019: ['164', '140'], 1020: ['183', '67'], 1021: ['191', '49'], 1022: ['171', '149'], 1023: ['107', '63'], 1024: ['191', '29'], 1025: ['180', '80'], 1026: ['166', '133'], 1027: ['189', '143'], 1028: ['189', '7'], 1029: ['185', '21'], 1030: ['185', '107'], 1031: ['180', '58'], 1032: ['158', '11'], 1033: ['135', '11'], 1034: ['189', '114'], 1037: ['185', '76'], 1038: ['159', '63'], 1039: ['173', '59'], 1040: ['178', '71'], 1041: ['139', '69'], 1042: ['158', '116'], 1043: ['162', '71'], 1044: ['135', '122'], 1045: ['171', '12'], 1046: ['171', '41'], 1047: ['154', '90'], 1049: ['191', '8'], 1050: ['189', '49'], 1051: ['180', '63'], 1052: ['183', '135'], 1053: ['149', '6'], 1054: ['159', '59'], 1055: ['111', '38'], 1056: ['139', '72'], 1057: ['164', '150'], 1058: ['171', '158'], 1059: ['148', '20'], 1060: ['174', '38'], 1061: ['189', '29'], 1062: ['180', '56'], 1063: ['164', '73'], 1064: ['191', '90'], 1065: ['139', '75'], 1066: ['166', '139'], 1067: ['180', '59'], 1068: ['158', '6'], 1069: ['117', '5'], 1070: ['171', '135'], 1071: ['154', '60'], 1072: ['85', '8'], 1073: ['183', '121'], 1074: ['185', '1'], 1075: ['107', '59'], 1076: ['172', '122'], 1077: ['164', '55'], 1078: ['174', '23'], 1079: ['108', '23'], 1080: ['137', '6'], 1081: ['111', '23'], 1082: ['76', '63'], 1084: ['174', '148'], 1085: ['189', '8'], 1086: ['183', '114'], 1087: ['116', '114'], 1088: ['136', '8'], 1089: ['183', '17'], 1090: ['191', '60'], 1091: ['183', '172'], 1092: ['171', '121'], 1093: ['164', '52'], 1094: ['189', '90'], 1095: ['154', '46'], 1096: ['183', '143'], 1097: ['135', '6'], 1098: ['171', '17'], 1099: ['183', '49'], 1100: ['136', '90'], 1101: ['183', '7'], 1103: ['164', '113'], 1104: ['171', '49'], 1105: ['159', '38'], 1106: ['191', '46'], 1108: ['116', '7'], 1109: ['155', '148'], 1110: ['164', '34'], 1111: ['75', '5'], 1112: ['172', '171'], 1113: ['148', '95'], 1115: ['174', '5'], 1116: ['121', '6'], 1117: ['180', '38'], 1118: ['124', '46'], 1119: ['189', '60'], 1120: ['171', '7'], 1122: ['159', '23'], 1123: ['133', '50'], 1124: ['122', '29'], 1125: ['173', '148'], 1126: ['183', '29'], 1127: ['60', '11'], 1128: ['164', '31'], 1130: ['159', '148'], 1131: ['154', '133'], 1132: ['173', '23'], 1133: ['172', '6'], 1134: ['180', '23'], 1135: ['114', '6'], 1137: ['95', '5'], 1138: ['17', '6'], 1139: ['107', '38'], 1140: ['189', '46'], 1141: ['143', '6'], 1142: ['139', '110'], 1143: ['180', '148'], 1144: ['136', '46'], 1145: ['139', '126'], 1146: ['183', '90'], 1147: ['191', '133'], 1148: ['49', '6'], 1150: ['173', '5'], 1151: ['134', '5'], 1153: ['171', '90'], 1155: ['164', '80'], 1157: ['139', '3'], 1158: ['91', '71'], 1159: ['171', '8'], 1162: ['159', '5'], 1163: ['133', '85'], 1164: ['139', '50'], 1165: ['23', '21'], 1166: ['74', '71'], 1167: ['154', '139'], 1168: ['183', '60'], 1170: ['110', '71'], 1172: ['29', '6'], 1173: ['171', '60'], 1175: ['180', '5'], 1177: ['191', '139'], 1178: ['189', '133'], 1179: ['139', '9'], 1182: ['164', '56'], 1184: ['136', '133'], 1186: ['107', '5'], 1188: ['139', '124'], 1190: ['76', '23'], 1192: ['133', '11'], 1194: ['154', '71'], 1195: ['90', '6'], 1198: ['139', '85'], 1199: ['183', '46'], 1201: ['148', '1'], 1205: ['191', '71'], 1206: ['164', '44'], 1207: ['164', '59'], 1209: ['171', '46'], 1211: ['189', '139'], 1213: ['124', '71'], 1215: ['139', '136'], 1218: ['60', '6'], 1224: ['76', '5'], 1225: ['85', '71'], 1228: ['5', '1'], 1230: ['183', '133'], 1231: ['133', '116'], 1234: ['13', '5'], 1236: ['139', '11'], 1237: ['171', '133'], 1239: ['189', '71'], 1243: ['136', '71'], 1246: ['46', '6'], 1261: ['71', '11'], 1267: ['164', '38'], 1270: ['183', '139'], 1272: ['139', '116'], 1273: ['139', '122'], 1280: ['171', '139'], 1288: ['164', '23'], 1289: ['164', '148'], 1296: ['183', '71'], 1298: ['116', '71'], 1300: ['122', '71'], 1305: ['171', '71'], 1318: ['164', '5'], 1344: ['71', '6']}

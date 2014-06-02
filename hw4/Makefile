@@ -44,6 +44,6 @@ test7:
 
 test8:
 	@echo -- running with test-input-8 --
-	python TSP.py test-input-8.txt
+	python TSP.py test-input-8-2.txt
 	@echo -- Running test --
-	python tsp-verifier.py test-input-8.txt test-input-8.txt.tour
+	python tsp-verifier.py test-input-8-2.txt test-input-8-2.txt.tour

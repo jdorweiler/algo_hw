@@ -64,7 +64,7 @@ def checksolution(cities, value, cityorder):
     dist = 0
     for i in range(n):
         dist = dist + distance(cities[cityorder[i]],cities[cityorder[i - 1]])
-        print dist
+       # print dist
     # check value of solution
     if dist == value:
         print('solution found of length ', value)
